@@ -9,11 +9,11 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <section className="flex flex-col lg:flex-row justify-center lg:justify-evenly items-center  ">
-        <h1 className=" text-gray-text text-3xl xl:text-5xl 2xl:text-6xl pl-0 lg:pl-12 order-last lg:order-1 lg:mt-0 mt-12 text-center lg:text-left">
+      <section className="flex flex-col lg:flex-row justify-center lg:justify-between items-center">
+        <h1 className=" text-gray-text text-3xl xl:text-5xl 2xl:text-6xl  lg:pl-12 order-last lg:order-1 lg:mt-0 mt-12 text-center lg:text-left">
           Empowering Next Generation Software Solutions
         </h1>
-        <div className=" 2xl:aspect-[16/12]  lg:aspect-[16/11]  w-full relative order-2 overflow-hidden">
+        <div className=" 2xl:aspect-[16/12]  lg:aspect-[16/11] aspect-video  w-full relative order-2 overflow-hidden">
           <Image
             alt="EnsoLab"
             src="/EnsoLab.png"
