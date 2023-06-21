@@ -2,7 +2,10 @@ import { AnimationDiv } from "@/components/client/animation-item";
 import { Products } from "@/constants/products";
 import { Technologies } from "@/constants/technologies";
 import React from "react";
-
+export const metadata = {
+  title: "Enso Core",
+  description: "Why Us Page",
+};
 const EnsoCore = () => {
   return (
     <>
