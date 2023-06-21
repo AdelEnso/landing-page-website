@@ -13,6 +13,8 @@ module.exports = {
       "gray-text": "#020101",
       "black-bg": "#0A0D1A",
       "text-footer": "#fdfdfd",
+      "dec-text": "#656565",
+      "border-color": "#cdd9de",
     },
     extend: {
       animation: {

@@ -1,4 +1,3 @@
-import { HamburgurIcon } from "@/assets/svgs/hamburger";
 import { IconOne } from "@/assets/svgs/icon-one";
 
 export const SetUS = [
