@@ -22,7 +22,7 @@ export const Header = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className=" hover:animate-pulse  flex lg:hidden w-8 h-8 cursor-pointer"
         >
-          {mobileMenuOpen ? <CancelIcon /> : <HamburgurIcon />}
+          {!mobileMenuOpen && <HamburgurIcon />}
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {ROUTES.map((route) => {
@@ -34,7 +34,7 @@ export const Header = () => {
               >
                 <Link
                   href={route.to}
-                  className={`text-md font-sans font-medium leading-6 text-black-text ${
+                  className={`text-base  font-sans font-medium leading-6 text-black-text ${
                     samePath
                       ? " underline-offset-8 underline decoration-2"
                       : "no-underline"
@@ -56,19 +56,37 @@ export const Header = () => {
         leave="transition duration-200 ease-in"
         leaveFrom="opacity-100 transform translate-y-0"
         leaveTo="opacity-0 transform translate-y-full"
+        className="fixed inset-0  items-center justify-center z-50"
       >
-        <div className="fixed inset-0 flex items-center justify-center z-50 max-h-full h-[calc(100%-1rem)]">
-          <div className=" bg-black-bg rounded-lg p-8 w-full">
-            {/* Your modal content goes here */}
-            <h2 className="text-2xl font-bold mb-4 text-white">Modal Title</h2>
-            <p>Modal Content</p>
-            <button
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Close
-            </button>
+        <div className="bg-black-bg absolute inset-0 p-4">
+          <div className="flex justify-between items-center">
+            <div>
+              <h1 className="text-text-footer text-2xl font-bold  ">
+                Ensō Lab
+              </h1>
+              <p className=" text-nav text-sm ">
+                Empowering Next Generation Software Solutions
+              </p>
+            </div>
+            <CancelIcon onClick={() => setMobileMenuOpen(false)} />
           </div>
+          <hr className=" w-32 h-[0.3px]  my-4 bg-nav border-0  mb-20" />
+          {ROUTES.map((route) => {
+            const samePath = pathname === route.to;
+            return (
+              <nav className="mb-5" key={route.label}>
+                <Link
+                  href={route.to}
+                  className={`text-xl font-bold   ${
+                    samePath ? "text-text-footer" : "text-nav"
+                  }`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {route.label}
+                </Link>
+              </nav>
+            );
+          })}
         </div>
       </Transition>
     </>

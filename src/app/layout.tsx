@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} font-sans`}>
-        <main className="relative flex-col min-h-screen bg-white">
+        <main className="relative flex-col min-h-screen bg-white cursor-point">
           <Header />
           {children}
           <Footer />

@@ -10,36 +10,36 @@ const EnsoCore = () => {
   return (
     <>
       <section className="container mx-auto px-12">
-        <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold">
           Ensō Core
         </h1>
-        <p className="text-center text-gray-text mt-8">
+        <p className="text-center text-dec-text mt-2 md:m-8 text-lg font-medium">
           “With Ensō Core, businesses can unlock their full potential, making
           informed, data-driven decisions that propel growth and success.”
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <div className=" mt-12  ">
-          <p className=" text-3xl text-black-text">
+          <p className=" text-xl sm:text-2xl md:text-3xl text-black-text font-bold">
             Revolutionizing Real-World Problem Solving
           </p>
-          <p className="text-dec-text text-lg my-10">
+          <p className="text-dec-text text-lg my-10 font-medium">
             Meet Ensō Core, our state-of-the-art computing framework designed to
             tackle complex real-world challenges with unparalleled flexibility
             and efficiency.
           </p>
-          <p className=" text-3xl text-black-text">
+          <p className=" text-xl sm:text-2xl md:text-3xl text-black-text font-bold">
             Tailored Solutions for Diverse Challenges
           </p>
-          <p className="text-dec-text text-lg my-10">
+          <p className="text-dec-text text-lg my-10 font-medium">
             Ensō Core is fully customizable, meeting the unique needs of both
             organizations and individuals. Our aim is to provide users with a
             dynamic ecosystem that harnesses knowledge and information,
             transforming their approach to problem-solving.
           </p>
-          <p className=" text-3xl text-black-text">
+          <p className=" text-xl sm:text-2xl md:text-3xl text-black-text font-bold">
             Igniting Innovation in Emerging Fields
           </p>
-          <p className="text-dec-text text-lg my-10">
+          <p className="text-dec-text text-lg my-10 font-medium">
             Ensō Core serves as an innovation accelerator in unexplored domains.
             By enhancing business decision-making with intelligence and acumen,
             Ensō Core equips organizations to confidently and precisely navigate
@@ -48,10 +48,10 @@ const EnsoCore = () => {
         </div>
       </section>
       <section className="mt-20 container mx-auto">
-        <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold">
           Our Product Portfolio
         </h1>
-        <p className="text-center text-gray-text mt-8">
+        <p className="text-center text-dec-text text-lg mt-2 md:mt-8 font-medium">
           “With Ensō Core, businesses can unlock their full potential, making
           informed, data-driven decisions that propel growth and success.”
         </p>
@@ -73,15 +73,15 @@ const EnsoCore = () => {
         </div>
       </section>
       <section className="mt-20 container mx-auto px-12 ">
-        <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold">
           Our Technology
         </h1>
-        <p className="text-center text-gray-text mt-8">
+        <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
           Enso Lab offers a unique technology network which gives you access to
           a large state-of-the-art application pool.
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
-        <p className="text-center text-gray-text my-8">
+        <p className="text-center text-dec-text my-8 text-lg">
           3 x PCT Patent Pending, Unpublished, Filed. Our intellectual property
           portfolio consists of three work-in-progress PCT patent drafts, which
           are currently filed and unpublished. These patents cover the following

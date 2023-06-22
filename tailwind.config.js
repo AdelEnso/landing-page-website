@@ -15,8 +15,14 @@ module.exports = {
       "text-footer": "#fdfdfd",
       "dec-text": "#656565",
       "border-color": "#cdd9de",
+      error: "#ff5b4a",
+      button: "#BABABA",
+      nav: "#A9A7B0",
     },
     extend: {
+      cursor: {
+        point: "url(../assets/images/point.png), default",
+      },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
         "spin-slow": "spin 4s linear infinite",
