@@ -1,5 +1,6 @@
 import { Engineering, MANAGEMENT } from "@/constants/team";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const OurTeam = () => {
@@ -31,16 +32,19 @@ const OurTeam = () => {
       <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
       <div className="flex flex-wrap gap-4 justify-center cursor-pointer items-center mt-20">
         {MANAGEMENT.map((item, key) => (
-          <div key={`teams_${item.name}${key}`}>
-            <div className="relative  overflow-hidden bg-cover bg-no-repeat">
-              <Image
-                src={item.image}
-                className="transition duration-300 ease-in-out hover:scale-110 rounded"
-                width={400}
-                height={400}
-                alt={item.name}
-              />
-            </div>
+          <Link
+            href={`/our-team/${item.name}`}
+            key={`teams_${item.name}${key}`}
+            className="relative  overflow-hidden bg-cover bg-no-repeat"
+          >
+            <Image
+              src={item.image}
+              className="transition duration-300 ease-in-out hover:scale-110 rounded"
+              width={400}
+              height={400}
+              alt={item.name}
+            />
+
             <p className=" text-base md:text-xl font-semibold text-gray-text mt-0 md:mt-3 text-center md:text-left">
               {item.name}
             </p>
@@ -48,7 +52,7 @@ const OurTeam = () => {
             <p className=" text-xs md:text-base font-semibold text-dec-text md:mt-1 text-center md:text-left">
               {item.title}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
       <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold mt-20">
@@ -57,16 +61,19 @@ const OurTeam = () => {
       <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
       <div className="flex flex-wrap gap-4 justify-center cursor-pointer items-center">
         {Engineering.map((item, key) => (
-          <div key={`teams_${item.name}${key}`}>
-            <div className="relative  overflow-hidden bg-cover bg-no-repeat">
-              <Image
-                src={item.image}
-                className="transition duration-300 ease-in-out hover:scale-110 rounded"
-                width={400}
-                height={400}
-                alt={item.name}
-              />
-            </div>
+          <Link
+            href={`/our-team/${item.name}`}
+            key={`teams_${item.name}${key}`}
+            className="relative  overflow-hidden bg-cover bg-no-repeat"
+          >
+            <Image
+              src={item.image}
+              className="transition duration-300 ease-in-out hover:scale-110 rounded"
+              width={400}
+              height={400}
+              alt={item.name}
+            />
+
             <p className=" text-base md:text-xl font-semibold text-gray-text mt-0 md:mt-3 text-center md:text-left">
               {item.name}
             </p>
@@ -74,7 +81,7 @@ const OurTeam = () => {
             <p className=" text-xs md:text-base font-semibold text-dec-text md:mt-1 text-center md:text-left">
               {item.title}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

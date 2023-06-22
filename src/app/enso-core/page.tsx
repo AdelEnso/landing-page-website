@@ -1,6 +1,7 @@
 import { AnimationDiv } from "@/components/client/animation-item";
 import { Products } from "@/constants/products";
 import { Technologies } from "@/constants/technologies";
+import Link from "next/link";
 import React from "react";
 export const metadata = {
   title: "Enso Core",
@@ -13,7 +14,7 @@ const EnsoCore = () => {
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold">
           Ensō Core
         </h1>
-        <p className="text-center text-dec-text mt-2 md:m-8 text-lg font-medium">
+        <p className="text-center text-dec-text mt-2 md:mt-8 text-lg font-medium">
           “With Ensō Core, businesses can unlock their full potential, making
           informed, data-driven decisions that propel growth and success.”
         </p>
@@ -59,7 +60,7 @@ const EnsoCore = () => {
         <div className=" px-12  mt-12 grid grid-cols-1 lg:grid-cols-2 gap-3">
           {Products.map((item, key) => {
             return (
-              <React.Fragment key={`id_prod_${item.id}${key}`}>
+              <Link href={item.link} key={`id_prod_${item.id}${key}`}>
                 <AnimationDiv>
                   <p className=" text-3xl text-black-text">{item.name}</p>
                   <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
@@ -67,7 +68,7 @@ const EnsoCore = () => {
                     {item.decription}
                   </p>
                 </AnimationDiv>
-              </React.Fragment>
+              </Link>
             );
           })}
         </div>
