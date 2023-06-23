@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Enso.co",
   description: "Empowering Next Generation Software Solutions",
   openGraph: {
-    images: "/EnsoLab.png",
+    images: ["/EnsoLab.png"],
   },
 };
 export default function Home() {

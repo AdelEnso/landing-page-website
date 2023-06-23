@@ -35,16 +35,16 @@ const OurTeam = () => {
           <Link
             href={`/our-team/${item.name}`}
             key={`teams_${item.name}${key}`}
-            className="relative  overflow-hidden bg-cover bg-no-repeat"
           >
-            <Image
-              src={item.image}
-              className="transition duration-300 ease-in-out hover:scale-110 rounded"
-              width={400}
-              height={400}
-              alt={item.name}
-            />
-
+            <div className="relative  overflow-hidden bg-cover bg-no-repeat">
+              <Image
+                src={item.image}
+                className="transition duration-300 ease-in-out hover:scale-110 rounded bg-[#EFE8E8]"
+                width={400}
+                height={400}
+                alt={item.name}
+              />
+            </div>
             <p className=" text-base md:text-xl font-semibold text-gray-text mt-0 md:mt-3 text-center md:text-left">
               {item.name}
             </p>
@@ -64,15 +64,16 @@ const OurTeam = () => {
           <Link
             href={`/our-team/${item.name}`}
             key={`teams_${item.name}${key}`}
-            className="relative  overflow-hidden bg-cover bg-no-repeat"
           >
-            <Image
-              src={item.image}
-              className="transition duration-300 ease-in-out hover:scale-110 rounded"
-              width={400}
-              height={400}
-              alt={item.name}
-            />
+            <div className="relative  overflow-hidden bg-cover bg-no-repeat">
+              <Image
+                src={item.image}
+                className="transition duration-300 ease-in-out hover:scale-110 rounded"
+                width={400}
+                height={400}
+                alt={item.name}
+              />
+            </div>
 
             <p className=" text-base md:text-xl font-semibold text-gray-text mt-0 md:mt-3 text-center md:text-left">
               {item.name}

@@ -66,7 +66,7 @@ export const Engineering = [
   {
     name: "Adel Al Lham",
     title: "SR.Front End Developer",
-    image: "/adel.png",
+    image: "/adel1.png",
     bio: "Bachelor's degree in Artificial Intelligence and possess expertise in front-end development for web and mobile platforms using JavaScript, TypeScript, React.js, Redux.js, and React Native.",
   },
   {
