@@ -4,14 +4,32 @@ import { ROUTES } from "@/constants/routes";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { CancelIcon } from "@/assets/svgs/cancel";
 import { HamburgurIcon } from "@/assets/svgs/hamburger";
-import { Transition } from "@headlessui/react";
+import { Menu, Transition } from "@headlessui/react";
 
 export const Header = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showWhyUsMenu, setShowWhyUsMenu] = useState(false);
+
+  const handleWhyUsMouseEnter = () => {
+    setShowWhyUsMenu(true);
+  };
+
+  const handleWhyUsMouseLeave = () => {
+    setShowWhyUsMenu(false);
+  };
+
+  const handleMenuMouseEnter = () => {
+    setShowWhyUsMenu(true);
+  };
+
+  const handleMenuMouseLeave = () => {
+    setShowWhyUsMenu(false);
+  };
+
   return (
     <>
       <header className=" flex justify-between items-center p-6 lg:px-8">
@@ -27,23 +45,71 @@ export const Header = () => {
         <div className="hidden lg:flex lg:gap-x-12">
           {ROUTES.map((route) => {
             const samePath = pathname === route.to;
+            const MenuShow = route.label === "Why Us";
             return (
-              <nav
-                className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
-                key={route.label}
-              >
-                <Link
-                  href={route.to}
-                  className={`text-base  font-sans font-medium leading-6 text-black-text ${
-                    samePath
-                      ? " underline-offset-8 underline decoration-2"
-                      : "no-underline"
-                  }`}
-                >
-                  {route.label}
-                </Link>
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
-              </nav>
+              <>
+                {MenuShow ? (
+                  <nav
+                    className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8 relative"
+                    key={route.label}
+                    onMouseEnter={handleWhyUsMouseEnter}
+                    onMouseLeave={handleWhyUsMouseLeave}
+                  >
+                    <Link
+                      href={route.to}
+                      className={`text-base  font-sans font-medium leading-6 text-black-text ${
+                        samePath
+                          ? " underline-offset-8 underline decoration-2"
+                          : "no-underline"
+                      }`}
+                    >
+                      {route.label}
+                    </Link>
+                    {showWhyUsMenu && (
+                      <div
+                        onMouseEnter={handleMenuMouseEnter}
+                        onMouseLeave={handleMenuMouseLeave}
+                        className="absolute z-50  w-32 bg-white rounded-lg shadow-lg p-2 mt-2"
+                      >
+                        <ul className="space-y-2">
+                          <li>
+                            <Link href="/enso-core#products">
+                              <p className="text-gray-800 hover:text-indigo-600">
+                                Product
+                              </p>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/enso-core#tech">
+                              <p className="text-gray-800 hover:text-indigo-600">
+                                Technology
+                              </p>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
+                  </nav>
+                ) : (
+                  <nav
+                    className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
+                    key={route.label}
+                  >
+                    <Link
+                      href={route.to}
+                      className={`text-base  font-sans font-medium leading-6 text-black-text ${
+                        samePath
+                          ? " underline-offset-8 underline decoration-2"
+                          : "no-underline"
+                      }`}
+                    >
+                      {route.label}
+                    </Link>
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
+                  </nav>
+                )}
+              </>
             );
           })}
         </div>

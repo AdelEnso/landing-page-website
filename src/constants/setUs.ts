@@ -1,19 +1,21 @@
-import { IconOne } from "@/assets/svgs/icon-one";
+import { PeopleIcon } from "@/assets/svgs/pep";
+import { ServicesIcon } from "@/assets/svgs/services";
+import { TechIcon } from "@/assets/svgs/tech";
 
 export const SetUS = [
   {
     label: "Our Technology",
-    to: "/tect",
-    Icon: IconOne,
+    to: "/enso-core#tech",
+    Icon: TechIcon,
   },
   {
     label: "Our People",
-    to: "/tect",
-    Icon: IconOne,
+    to: "/our-team#team",
+    Icon: PeopleIcon,
   },
   {
     label: "Our Services",
-    to: "/tect",
-    Icon: IconOne,
+    to: "/services",
+    Icon: ServicesIcon,
   },
 ];

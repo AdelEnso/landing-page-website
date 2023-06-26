@@ -7,6 +7,7 @@ import { SendIcon } from "@/assets/svgs/send";
 import { SubjectIcon } from "@/assets/svgs/subject";
 import { UserIcon } from "@/assets/svgs/user";
 import React, { useRef, useState } from "react";
+import { AnimationDiv } from "../animation-item";
 
 export const Form = () => {
   const nameRef: any = useRef();
@@ -14,40 +15,111 @@ export const Form = () => {
   const emailRef: any = useRef();
   const subjectRef: any = useRef();
   const messageRef: any = useRef();
-  const [error, setError] = useState({ fields: "", mail: "" });
-  const handleSubmit = (e: any) => {
+  const [error, setError]: any = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState("");
+  const validationSchema: any = {
+    name: {
+      validate: (value: any) => value.trim().length > 0,
+      errorMessage: "Please enter your name.",
+    },
+    phone: {
+      validate: (value: any) => /^\d+$/.test(value) && value.trim().length > 0,
+      errorMessage: "Please enter a valid phone number.",
+    },
+    email: {
+      validate: (value: any) =>
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) && value.trim().length > 0,
+      errorMessage: "Please enter a valid email address.",
+    },
+    subject: {
+      validate: (value: any) => value.trim().length > 0,
+      errorMessage: "Please enter the subject.",
+    },
+    message: {
+      validate: (value: any) => value.trim().length > 0,
+      errorMessage: "Please enter the message.",
+    },
+  };
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     // Getting the values from the refs
-    const name = nameRef.current.value;
-    const phone = phoneRef.current.value;
-    const email = emailRef.current.value;
-    const subject = subjectRef.current.value;
-    const message = messageRef.current.value;
+    const formData = {
+      name: nameRef.current.value,
+      phone: phoneRef.current.value,
+      email: emailRef.current.value,
+      subject: subjectRef.current.value,
+      message: messageRef.current.value,
+    };
 
-    // Validate form fields
-    if (!name || !phone || !email || !subject || !message) {
-      setError({ ...error, fields: "Please fill in all fields." });
-      return;
+    const invalidFields = Object.entries(formData).reduce(
+      (errors, [fieldName, value]) => {
+        const fieldValidation: any = validationSchema[fieldName];
+        if (!fieldValidation.validate(value)) {
+          //@ts-ignore
+          errors[fieldName] = fieldValidation.errorMessage;
+        } else {
+          //@ts-ignore
+          errors[fieldName] = ""; // Set the error message to an empty string or remove this line if you don't need to store empty error messages
+        }
+        return errors;
+      },
+      {}
+    );
+
+    setError(invalidFields); // Update the error state with all the error messages
+
+    // Check if there are any error messages
+    const hasErrors = Object.values(invalidFields).some(
+      (error) => error !== ""
+    );
+
+    const data = {
+      data: {
+        Name: formData.name,
+        Phone: formData.phone,
+        Email: formData.email,
+        Subject: formData.subject,
+        Help: formData.message,
+      },
+    };
+    if (!hasErrors) {
+      try {
+        setLoading(true);
+        const response = await fetch("http://localhost:1337/api/contacts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        if (response.ok) {
+          // Request successful, handle the response
+          // Your code here...
+
+          nameRef.current.value = "";
+          phoneRef.current.value = "";
+          emailRef.current.value = "";
+          subjectRef.current.value = "";
+          messageRef.current.value = "";
+        } else {
+          // Request failed, handle the error
+          console.error("Failed to post data");
+        }
+      } catch (e) {
+        setSuccess("An error occurred");
+      } finally {
+        setLoading(false);
+      }
     }
-
-    // Validate email format using regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
-      setError({ ...error, mail: "Please enter a valid email address." });
-      return;
-    }
-
-    // Handle form submission
-    // Your code here...
-
-    // Reset the form
-    nameRef.current.value = "";
-    phoneRef.current.value = "";
-    emailRef.current.value = "";
-    subjectRef.current.value = "";
-    messageRef.current.value = "";
   };
 
   return (
@@ -63,9 +135,9 @@ export const Form = () => {
             className="w-full p-2 border-b border-dec-text border-opacity-40 focus:border-gray-text hover:border-gray-text focus:outline-none hover:transition-transform hover:duration-500"
           />
         </label>
-        {error.fields && (
+        {error.name && (
           <p className="text-error text-sm font-normal mt-2  ml-6">
-            {error.fields}
+            {error.name}
           </p>
         )}
       </div>
@@ -81,9 +153,9 @@ export const Form = () => {
             className="w-full p-2 border-b border-dec-text border-opacity-40 focus:border-gray-text hover:border-gray-text focus:outline-none hover:transition-transform hover:duration-500"
           />
         </label>
-        {error.fields && (
+        {error.phone && (
           <p className="text-error text-sm font-normal mt-2  ml-6">
-            {error.fields}
+            {error.phone}
           </p>
         )}
       </div>
@@ -99,9 +171,9 @@ export const Form = () => {
             className="w-full p-2 border-b border-dec-text border-opacity-40 focus:border-gray-text hover:border-gray-text focus:outline-none hover:transition-transform hover:duration-500"
           />
         </label>
-        {error.fields && (
+        {error.email && (
           <p className="text-error text-sm font-normal mt-2  ml-6">
-            {error.fields} {error.mail && "/" + error.mail}
+            {error.email}
           </p>
         )}
       </div>
@@ -117,9 +189,9 @@ export const Form = () => {
             className="w-full p-2 border-b border-dec-text border-opacity-40 focus:border-gray-text hover:border-gray-text focus:outline-none hover:transition-transform hover:duration-500"
           />
         </label>
-        {error.fields && (
+        {error.subject && (
           <p className="text-error text-sm font-normal mt-2  ml-6">
-            {error.fields}
+            {error.subject}
           </p>
         )}
       </div>
@@ -136,20 +208,25 @@ export const Form = () => {
             rows={2}
           />
         </label>
-        {error.fields && (
+        {error.message && (
           <p className="text-error text-sm font-normal mt-2  ml-6">
-            {error.fields}
+            {error.message}
           </p>
         )}
       </div>
-
-      <button
-        type="submit"
-        className="px-6 py-2 md:px-12 md:py-4 text-white bg-button rounded hover:bg-dec-text flex justify-center items-center gap-2 font-medium texts"
-      >
-        <SendIcon />
-        Get in Touch
-      </button>
+      <div className="flex gap-4 items-center">
+        <button
+          disabled={loading}
+          type="submit"
+          className="px-6 py-2 md:px-12 md:py-4 text-white bg-button rounded hover:bg-dec-text flex justify-center items-center gap-2 font-medium texts disabled:cursor-wait disabled:bg-dec-text"
+        >
+          <SendIcon />
+          Get in Touch
+        </button>
+        <AnimationDiv>
+          <p className="text-dec-text font-semibold text-lg">{success}</p>
+        </AnimationDiv>
+      </div>
     </form>
   );
 };
