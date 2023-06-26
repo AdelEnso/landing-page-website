@@ -23,7 +23,7 @@ const teamDeatail: React.FC<teamPageProps> = ({ params: { name } }) => {
         {mEmp ? mEmp.title : eEmp?.title}
       </p>
 
-      <div className="flex items-center lg:items-start justify-start gap-4 mt-20 flex-col lg:flex-row">
+      <div className="flex items-center lg:items-center justify-start gap-4 mt-20 flex-col lg:flex-row">
         <Image
           src={mEmp?.image || eEmp?.image || ""}
           alt={empName}
@@ -31,7 +31,7 @@ const teamDeatail: React.FC<teamPageProps> = ({ params: { name } }) => {
           height={250}
           className="rounded-sm 2xl:w-[500px] 2xl:h-[500px]"
         />
-        <div>
+        <div className="">
           <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-left font-bold">
             Biography
           </h1>

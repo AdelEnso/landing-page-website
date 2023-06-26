@@ -1,6 +1,7 @@
-import { IconOne } from "@/assets/svgs/icon-one";
 import RNGImg from "../../public/RNG.png";
 import AIImge from "../../public/AI.png";
+import HTMIm from "../../public/HTM.png";
+
 export const Technologies = [
   {
     id: 1,
@@ -13,7 +14,7 @@ export const Technologies = [
   {
     id: 2,
     name: "Hardware Transactional Memory-based Computing Engine",
-    Icon: AIImge,
+    Icon: HTMIm,
     decription:
       "HTM allows concurrent transactions on shared memory, ensuring ACID properties without explicit locks.",
   },

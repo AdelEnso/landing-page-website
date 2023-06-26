@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Firm from "../../../public/firm.png";
-import History from "../../../public/History.png";
+import History from "../../../public/time-line.png";
 
 const OurTeam = () => {
   return (
