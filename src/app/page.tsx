@@ -50,7 +50,7 @@ export default function Home() {
             positively.”
           </p>
           <hr className=" w-32 h-[0.3px] mx-auto mt-4 mb-10 bg-black-bg border-0 rounded-sm " />
-          <div className="grid grid-cols-1   lg:grid-cols-3   gap-4 place-items-center ">
+          <div className="grid grid-cols-1   lg:grid-cols-4   gap-4 place-items-center ">
             {SetUS.map((item, key) => {
               return (
                 <Link

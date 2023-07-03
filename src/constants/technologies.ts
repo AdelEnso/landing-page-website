@@ -1,5 +1,5 @@
-import RNGImg from "../../public/RNG.png";
-import AIImge from "../../public/AI.png";
+import RNGImg from "../../public/RNG1.png";
+import AIImge from "../../public/AI1.png";
 import HTMIm from "../../public/HTM.png";
 
 export const Technologies = [

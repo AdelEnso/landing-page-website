@@ -1,5 +1,6 @@
 import DgIm from "../../public/Thumb-01.png";
-import ThIm from "../../public/threat.png";
+import ThIm from "../../public/threat1.png";
+import Pen from "../../public/firm.png";
 export const SERVICES = [
   {
     name: "Threat Intellegence",
@@ -9,7 +10,7 @@ export const SERVICES = [
   },
   {
     name: "Digital Forensics and Incident Response(DFIR)",
-    Icon: DgIm,
+    Icon: ThIm,
     description:
       "We offer a wide range of digital forensics incident response services tailored to meet the unique requirements of your organization. Our team of highly skilled professionals possesses extensive expertise in conducting forensic investigations, analyzing digital evidence, and mitigating the impact of cyber incidents.",
     points: [
@@ -21,7 +22,7 @@ export const SERVICES = [
   },
   {
     name: "Penetration Testing and Vulnerability Assessment",
-    Icon: DgIm,
+    Icon: ThIm,
     description:
       "Enso Lab’s Penetration Testing Services are tailored to simulate actual cyber threats targeting various components of your IT system. Our objective is to appraise how well your team, procedures, and technological systems can detect and react to these threats. By undertaking exhaustive evaluations, we pinpoint current weak spots in your security setup, offering invaluable advice to enhance your total security stance.",
     points: [

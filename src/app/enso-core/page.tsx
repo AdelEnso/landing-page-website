@@ -13,11 +13,11 @@ export const metadata = {
 const EnsoCore = () => {
   return (
     <>
-      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center mt-5">
+      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
         Ensō Core
       </h1>
-      <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
-      <section className="container mx-auto px-12 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between">
+      <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
+      <section className="container mx-auto px-12 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between mt-10">
         <div className="mt-12 order-2 lg:order-1">
           <p className=" text-lg  md:text-xl 2xl:text-2xl text-black-text font-medium text-center lg:text-left">
             Revolutionizing Real-World Problem Solving
@@ -92,7 +92,7 @@ const EnsoCore = () => {
           </Link>
         </div>
       </section>
-      <section className="mt-20 container mx-auto px-12 " id="tech">
+      <section className="mt-20 container mx-auto px-12 " id="technology">
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
           Our Technology
         </h1>
@@ -126,7 +126,7 @@ const EnsoCore = () => {
                     {item.name}
                   </p>
 
-                  <p className="text-dec-text text-base my-2 text-center ">
+                  <p className="text-dec-text text-base my-2 text-center  h-12">
                     {item.decription}
                   </p>
                 </AnimationDiv>
