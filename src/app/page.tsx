@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     images: ["/EnsoLab.png"],
   },
 };
+
 export default function Home() {
   return (
     <>
@@ -20,8 +21,8 @@ export default function Home() {
           alt="BG"
           src={BG}
           sizes="100vw"
-          // blurDataURL="https://images.unsplash.com/photo-1682687982423-295485af248a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
           className=" 2xl:w-full w-3/4  h-auto"
+          placeholder="blur"
         />
       </section>
 
@@ -45,7 +46,12 @@ export default function Home() {
                   scroll={false}
                   key={`${key}_STE-US`}
                 >
-                  <item.Icon />
+                  <Image
+                    width={80}
+                    height={80}
+                    src={item.Icon}
+                    alt={item.label}
+                  />
 
                   <p className="text-center font-sans font-bold text-xl">
                     {item.label}

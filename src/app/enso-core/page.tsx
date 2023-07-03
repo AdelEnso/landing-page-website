@@ -13,7 +13,7 @@ export const metadata = {
 const EnsoCore = () => {
   return (
     <>
-      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center mt-4">
         Ensō Core
       </h1>
       <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
@@ -50,6 +50,7 @@ const EnsoCore = () => {
           src={Brain}
           className="w-3/5 2xl:w-3/4  h-auto  object-contain  lg:bottom-6 relative order-1 lg:order-2"
           alt="CORE"
+          placeholder="blur"
         />
       </section>
       <section className="mt-20 container mx-auto" id="products">
@@ -75,6 +76,7 @@ const EnsoCore = () => {
           <Image
             src={ProdImage}
             sizes="100vw"
+            placeholder="blur"
             alt="ProductSec"
             className=" w-full h-auto"
           />
@@ -114,6 +116,7 @@ const EnsoCore = () => {
                     src={item.Icon}
                     sizes="100vw"
                     alt={item.name}
+                    placeholder="blur"
                     className=" w-full h-auto"
                   />
                   {/* <div className="flex justify-center ">
