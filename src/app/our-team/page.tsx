@@ -8,7 +8,7 @@ import History from "../../../public/time-line.png";
 const OurTeam = () => {
   return (
     <>
-      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center mt-5">
         About Ensō Lab
       </h1>
       <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />

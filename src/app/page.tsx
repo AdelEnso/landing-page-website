@@ -2,7 +2,9 @@ import { ArrowIcon } from "@/assets/svgs/arrow";
 import { AnimationDiv } from "@/components/client/animation-item";
 import { SetUS } from "@/constants/setUs";
 import type { Metadata } from "next";
-import BG from "../../public/Cover-01.png";
+import BG from "../../public/lOGO-01-02.png";
+import Right from "../../public/Icons-zeros-left.png";
+import Left from "../../public/Icons-zeros-right.png";
 import Image from "next/image";
 import Link from "next/link";
 export const metadata: Metadata = {
@@ -16,12 +18,23 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <section className="flex justify-center items-center container mx-auto">
+      <section className="flex justify-center items-center container mx-auto overflow-hidden px-12">
         <Image
           alt="BG"
+          src={Right}
+          className=" 2xl:w-full w-1/2 animate-pulse"
+          placeholder="blur"
+        />
+        <Image
+          alt="BGs"
           src={BG}
-          sizes="100vw"
-          className=" 2xl:w-full w-3/4  h-auto"
+          className=" 2xl:w-full w-3/4"
+          placeholder="blur"
+        />
+        <Image
+          alt="BGss"
+          src={Right}
+          className=" 2xl:w-full w-1/2 animate-pulse"
           placeholder="blur"
         />
       </section>

@@ -27,7 +27,7 @@ const ServiceItem = ({ name, Icon, description, points, reverse }: any) => (
 
 const Services = () => {
   return (
-    <section className="container mx-auto px-12">
+    <section className="container mx-auto px-12 mt-20">
       <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold">
         Our Services
       </h1>
