@@ -12,14 +12,33 @@ import { Menu, Transition } from "@headlessui/react";
 export const Header = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [productsMenu, setproductsMenu] = useState(false);
   const [showWhyUsMenu, setShowWhyUsMenu] = useState(false);
-
   const handleWhyUsMouseEnter = () => {
     setShowWhyUsMenu(true);
   };
+  const handleProductsMouseEnter = () => {
+    setproductsMenu(true);
+  };
+  const ProductsMouseLeave = () => {
+    setTimeout(() => {
+      setproductsMenu(false);
+    }, 2000);
+  };
 
   const handleWhyUsMouseLeave = () => {
-    setShowWhyUsMenu(false);
+    setTimeout(() => {
+      setShowWhyUsMenu(false);
+    }, 2000);
+  };
+  const handleMenuMousePEnter = () => {
+    setproductsMenu(true);
+  };
+
+  const handleMenuMousePLeave = () => {
+    setTimeout(() => {
+      setproductsMenu(false);
+    }, 2000);
   };
 
   const handleMenuMouseEnter = () => {
@@ -27,7 +46,9 @@ export const Header = () => {
   };
 
   const handleMenuMouseLeave = () => {
-    setShowWhyUsMenu(false);
+    setTimeout(() => {
+      setShowWhyUsMenu(false);
+    }, 2000);
   };
 
   return (
@@ -46,14 +67,58 @@ export const Header = () => {
           {ROUTES.map((route) => {
             const samePath = pathname === route.to;
             const MenuShow = route.label === "Why Us";
+            const ProductMenu = route.label === "Products";
             return (
               <>
-                {MenuShow ? (
+                {ProductMenu ? (
                   <nav
                     className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8 relative"
                     key={route.label}
-                    onMouseEnter={handleWhyUsMouseEnter}
-                    onMouseLeave={handleWhyUsMouseLeave}
+                    onMouseEnter={handleProductsMouseEnter}
+                    onMouseLeave={ProductsMouseLeave}
+                  >
+                    <Link
+                      href={route.to}
+                      className={`text-base  font-sans font-medium leading-6 text-black-text ${
+                        samePath
+                          ? " underline-offset-8 underline decoration-2"
+                          : "no-underline"
+                      }`}
+                    >
+                      {route.label}
+                    </Link>
+                    {productsMenu && (
+                      <div
+                        className="absolute z-50  w-32 bg-white rounded-lg shadow-lg p-2 mt-2"
+                        onMouseEnter={handleMenuMousePEnter}
+                        onMouseLeave={handleMenuMousePLeave}
+                      >
+                        <ul className="space-y-2">
+                          <li>
+                            <Link href="/products/Ensō-i">
+                              <p className="text-gray-800 hover:text-indigo-600">
+                                Ensō-i
+                              </p>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/products/Ensō RNG-aaS">
+                              <p className="text-gray-800 hover:text-indigo-600">
+                                Ensō RNG
+                              </p>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
+                  </nav>
+                ) : MenuShow ? (
+                  <nav
+                    className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8 relative"
+                    key={route.label}
+                    onMouseEnter={handleMenuMouseEnter}
+                    onMouseLeave={handleMenuMouseLeave}
                   >
                     <Link
                       href={route.to}
@@ -67,18 +132,11 @@ export const Header = () => {
                     </Link>
                     {showWhyUsMenu && (
                       <div
-                        onMouseEnter={handleMenuMouseEnter}
-                        onMouseLeave={handleMenuMouseLeave}
+                        onMouseEnter={handleWhyUsMouseEnter}
+                        onMouseLeave={handleWhyUsMouseLeave}
                         className="absolute z-50  w-32 bg-white rounded-lg shadow-lg p-2 mt-2"
                       >
                         <ul className="space-y-2">
-                          <li>
-                            <Link href="/enso-core#products">
-                              <p className="text-gray-800 hover:text-indigo-600">
-                                Product
-                              </p>
-                            </Link>
-                          </li>
                           <li>
                             <Link href="/enso-core#tech">
                               <p className="text-gray-800 hover:text-indigo-600">

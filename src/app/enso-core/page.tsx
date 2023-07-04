@@ -68,7 +68,7 @@ const EnsoCore = () => {
               <p className=" text-3xl text-black-text">Ensō-i</p>
               <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
               <p className="text-dec-text text-lg my-10">
-                Ensō-i is a hardware-accelerated Artifical Intelligence-based
+                Ensō-i is a hardware-accelerated Artificial Intelligence-based
                 threat prevention system.
               </p>
             </AnimationDiv>
@@ -133,6 +133,39 @@ const EnsoCore = () => {
               </React.Fragment>
             );
           })}
+        </div>
+      </section>
+      <section className="mt-20 container mx-auto px-12 " id="technology">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+          Research and Development
+        </h1>
+        <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
+          we are actively conducting groundbreaking research and development to
+          develop proactive and adaptive security solutions.
+        </p>
+        <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
+          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
+            <p className="text-center text-dec-text text-lg">
+              True Random Number Generation (TRNG)
+            </p>
+          </div>
+
+          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
+            <p className="text-center text-dec-text text-lg">
+              Handwear Transactional Memory Architecture
+            </p>
+          </div>
+          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
+            <p className="text-center text-dec-text text-lg">
+              Trusted Execution Environment (TEE)
+            </p>
+          </div>
+          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
+            <p className="text-center text-dec-text text-lg">
+              FPGA-based hardware design on post-quantum cryptography.
+            </p>
+          </div>
         </div>
       </section>
     </>

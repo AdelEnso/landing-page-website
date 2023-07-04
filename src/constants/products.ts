@@ -4,10 +4,10 @@ export const Products = [
     name: "Ensō-i",
     link: "/products/Ensō-i",
     decription:
-      "Ensō-i is a hardware-accelerated Artifical Intelligence-based threat prevention system.",
+      "Ensō-i is a hardware-accelerated Artificial Intelligence-based threat prevention system.",
 
     deatails: {
-      supported: "Linux(Kali,Parrot,Ubuntu,Debian)",
+      supported: "Linux(Kali, Parrot, Ubuntu, Debian)",
       future: [
         "Windows Platforms",
         "Cloud Platforms",
@@ -64,7 +64,7 @@ export const Products = [
     name: "Ensō RNG-aaS",
     link: "/products/Ensō RNG-aaS",
     decription:
-      "RNGaaS solution, providing truly random, cryptographically robust, and statistically independent numbers at all times.",
+      "RNG-aaS solution, providing truly random, cryptographically robust, and statistically independent numbers at all times.",
     deatails: {
       points: [
         {

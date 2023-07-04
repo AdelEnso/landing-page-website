@@ -4,6 +4,10 @@ export const ROUTES = [
     to: "/",
   },
   {
+    label: "Products",
+    to: "/enso-core#products",
+  },
+  {
     label: "Why Us",
     to: "/enso-core",
   },

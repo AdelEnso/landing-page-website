@@ -5,7 +5,7 @@ import HTMIm from "../../public/HTM.png";
 export const Technologies = [
   {
     id: 1,
-    name: "True Random Number Generator-as-a-Service (RNG-aaS)",
+    name: "True Random Number Generator (RNG)",
     Icon: RNGImg,
     decription:
       "RNG using cryptographic techniques that are resistant to quantum computer attacks.",
@@ -13,16 +13,16 @@ export const Technologies = [
 
   {
     id: 2,
-    name: "Hardware Transactional Memory-based Computing Engine",
+    name: "Hardware Transactional Memory (HTM)",
     Icon: HTMIm,
     decription:
-      "HTM allows concurrent transactions on shared memory, ensuring ACID properties without explicit locks.",
+      "HTM allows concurrent transactions on shared memory, ensuring processes ACID properties without explicit locks.",
   },
   {
     id: 3,
-    name: "AI-Based Solution for Run-Time Threat Prevention",
+    name: "Artificial Intelligence/Machine Learning",
     Icon: AIImge,
     decription:
-      "ML enabled us to learn patterns and make predictions from data without explicit programming.",
+      "AI/ML enabled us to learn patterns and make predictions from data without explicit programming.",
   },
 ];

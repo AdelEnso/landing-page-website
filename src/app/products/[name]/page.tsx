@@ -75,6 +75,19 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
             <p className=" text-base md:text-lg  text-dec-text  mb-2 px-1">
               {product?.deatails.supported}
             </p>
+            <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
+              Future Support Operating Systems
+            </h3>
+            <div className="flex">
+              {product?.deatails?.future?.map((item, key) => (
+                <p
+                  className=" text-base md:text-lg  text-dec-text  mb-2 px-1"
+                  key={`key${item}`}
+                >
+                  {item},
+                </p>
+              ))}
+            </div>
           </div>
         </>
       )}

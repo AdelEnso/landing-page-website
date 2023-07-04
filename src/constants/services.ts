@@ -3,7 +3,7 @@ import ThIm from "../../public/threat1.png";
 import Pen from "../../public/firm.png";
 export const SERVICES = [
   {
-    name: "Threat Intellegence",
+    name: "Threat Intelligence",
     Icon: ThIm,
     description:
       "Enso Lab provides a curated, targeted, and actionable threat intelligence service that’s transparent to customers. We focus on strategic rather than tactical intelligence, using diverse sources like dark web data and technical vulnerabilities. Our Digital Forensics and Incident Response team plays a key role in curating this intelligence, which bolsters our customers’ security systems and resilience against cyber threats.",
