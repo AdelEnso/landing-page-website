@@ -22,7 +22,7 @@ export default function Home() {
         <Image
           alt="BG"
           src={Right}
-          className=" 2xl:w-full w-1/2 animate-pulse"
+          className=" 2xl:hidden w-1/2 animate-pulse"
           placeholder="blur"
         />
         <Image
@@ -34,7 +34,7 @@ export default function Home() {
         <Image
           alt="BGss"
           src={Right}
-          className=" 2xl:w-full w-1/2 animate-pulse"
+          className=" 2xl:hidden w-1/2 animate-pulse"
           placeholder="blur"
         />
       </section>

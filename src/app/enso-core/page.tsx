@@ -48,7 +48,7 @@ const EnsoCore = () => {
         </div>
         <Image
           src={Brain}
-          className="w-3/5 2xl:w-3/4  h-auto  object-contain  lg:bottom-6 relative order-1 lg:order-2"
+          className="w-3/5   h-auto  object-contain  lg:bottom-6 relative order-1 lg:order-2"
           alt="CORE"
           placeholder="blur"
         />

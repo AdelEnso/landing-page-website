@@ -36,7 +36,7 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
                 <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
                   {point.title}
                 </h3>
-                <p className=" text-base md:text-lg  text-dec-text  mb-2 text-justify  px-1">
+                <p className=" text-base md:text-lg  text-dec-text  mb-2  px-1">
                   {point.desc}
                 </p>
               </div>
@@ -68,9 +68,13 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
               ))}
             </div>
           </div>
-          <p>Supported Operating Systems</p>
-          <div className=" border border-solid  border-white mb-4 p-4">
-            {product?.deatails.supported}
+          <div className=" border border-solid drop-shadow shadow border-white mb-4 p-4">
+            <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
+              Supported Operating Systems
+            </h3>
+            <p className=" text-base md:text-lg  text-dec-text  mb-2 px-1">
+              {product?.deatails.supported}
+            </p>
           </div>
         </>
       )}
