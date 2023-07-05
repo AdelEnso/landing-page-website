@@ -83,24 +83,25 @@ export const Form = () => {
     );
 
     const data = {
-      data: {
-        Name: formData.name,
-        Phone: formData.phone,
-        Email: formData.email,
-        Subject: formData.subject,
-        Help: formData.message,
-      },
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      subject: formData.subject,
+      help: formData.message,
     };
     if (!hasErrors) {
       try {
         setLoading(true);
-        const response = await fetch("http://localhost:1337/api/contacts", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        });
+        const response = await fetch(
+          "https://33b0-87-201-164-104.ngrok-free.app/contact",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          }
+        );
         if (response.ok) {
           // Request successful, handle the response
           // Your code here...
