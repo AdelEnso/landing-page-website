@@ -135,7 +135,7 @@ const EnsoCore = () => {
           })}
         </div>
       </section>
-      <section className="mt-20 container mx-auto px-12 " id="technology">
+      <section className="mt-20 container mx-auto px-12 ">
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
           Research and Development
         </h1>

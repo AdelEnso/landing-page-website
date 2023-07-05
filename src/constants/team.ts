@@ -11,24 +11,24 @@ export const MANAGEMENT = [
     image: "/masood_.png",
     bio: "Accomplished entrepreneur with over a decade of experience in business ownership, management, and development,Exceptional at forging strategic partnerships, leveraging knowledge networks, and cultivating connections to drive success,Renowned for launching and scaling businesses across various sectors, demonstrating a unique ability to adapt and innovate,Proficient in identifying new opportunities, designing creative solutions, and fostering sustainable growth",
   },
-
-  {
-    name: "Valerio Camardella",
-    title: "Chief Operating Officer",
-    image: "/Valerio.png",
-    bio: "Strategic VP and Director from Blackberry and Motorola, Valerio specializes in exponential and sustainable growth strategy for software and hardware security products. Valerio currently serves on the Board of Directors for two technology companies, Vorn and Qnective, focused on delivering secure data solutions to government and military, being a founding member of Qnective, now valued in excess of USD $1 billion",
-  },
   {
     name: "Oliver Michael Meyer",
     title: "Advisory Board Member",
     image: "/oliver2.png",
     bio: "The CEO of Löwenfels Partner AG. Over 20 years of experience as executive expertise including senior vice president for simulation training, chief information officer at RUAG and head of information technology at Ascom group. Highly affiliated with both technical and technological sides of the management and business.",
   },
+
   {
     name: "Prof. Prathap Subrahmanyam",
     title: "Advisory Board Member",
     image: "/prof.png",
     bio: "A consulting Professor at Stanford University for over 20 years, with involvement at various start-ups, corporations and investment firms, his primary responsibility in counseling faculty in matters of IP commercialization. He has co-authored over 210 technical papers, 5 books, has won numerous awards, and holds 14 international awarded/pending patents.",
+  },
+  {
+    name: "Valerio Camardella",
+    title: "Chief Operating Officer",
+    image: "/Valerio.png",
+    bio: "Strategic VP and Director from Blackberry and Motorola, Valerio specializes in exponential and sustainable growth strategy for software and hardware security products. Valerio currently serves on the Board of Directors for two technology companies, Vorn and Qnective, focused on delivering secure data solutions to government and military, being a founding member of Qnective, now valued in excess of USD $1 billion",
   },
 ];
 
@@ -41,7 +41,7 @@ export const Engineering = [
   },
   {
     name: "Muhammad Asim",
-    title: "Cyber Security Consultant",
+    title: "Team Leader",
     image: "/asim.png",
     bio: "Cyber Security Consultant having expertise in Governance, Risk & Compliance (GRC), IT and OT Audit, Vulnerability Assessment and Penetration Testing (VAPT), IAM, Digital Forensics, Cloud Security, and IoT Security.",
   },

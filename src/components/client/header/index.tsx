@@ -12,43 +12,11 @@ import { Menu, Transition } from "@headlessui/react";
 export const Header = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [productsMenu, setproductsMenu] = useState(false);
-  const [showWhyUsMenu, setShowWhyUsMenu] = useState(false);
-  const handleWhyUsMouseEnter = () => {
-    setShowWhyUsMenu(true);
-  };
-  const handleProductsMouseEnter = () => {
-    setproductsMenu(true);
-  };
-  const ProductsMouseLeave = () => {
-    setTimeout(() => {
-      setproductsMenu(false);
-    }, 2000);
-  };
-
-  const handleWhyUsMouseLeave = () => {
-    setTimeout(() => {
-      setShowWhyUsMenu(false);
-    }, 2000);
-  };
-  const handleMenuMousePEnter = () => {
-    setproductsMenu(true);
-  };
-
-  const handleMenuMousePLeave = () => {
-    setTimeout(() => {
-      setproductsMenu(false);
-    }, 2000);
-  };
-
-  const handleMenuMouseEnter = () => {
-    setShowWhyUsMenu(true);
-  };
-
-  const handleMenuMouseLeave = () => {
-    setTimeout(() => {
-      setShowWhyUsMenu(false);
-    }, 2000);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [activeMenuItem, setActiveMenuItem] = useState("");
+  const handleDropdownToggle = (menuItem: string) => {
+    setActiveMenuItem(menuItem);
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   return (
@@ -66,33 +34,31 @@ export const Header = () => {
         <div className="hidden lg:flex lg:gap-x-12">
           {ROUTES.map((route) => {
             const samePath = pathname === route.to;
-            const MenuShow = route.label === "Why Us";
-            const ProductMenu = route.label === "Products";
+
             return (
               <>
-                {ProductMenu ? (
-                  <nav
-                    className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8 relative"
-                    key={route.label}
-                    onMouseEnter={handleProductsMouseEnter}
-                    onMouseLeave={ProductsMouseLeave}
+                <nav
+                  className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
+                  onMouseEnter={() => handleDropdownToggle(route.label)}
+                  onMouseLeave={() => setIsDropdownOpen(false)}
+                  key={route.label}
+                >
+                  <Link
+                    href={route.to}
+                    className={`text-base  font-sans font-medium leading-6 text-black-text ${
+                      samePath
+                        ? " underline-offset-8 underline decoration-2"
+                        : "no-underline"
+                    }`}
                   >
-                    <Link
-                      href={route.to}
-                      className={`text-base  font-sans font-medium leading-6 text-black-text ${
-                        samePath
-                          ? " underline-offset-8 underline decoration-2"
-                          : "no-underline"
-                      }`}
-                    >
-                      {route.label}
-                    </Link>
-                    {productsMenu && (
-                      <div
-                        className="absolute z-50  w-32 bg-white rounded-lg shadow-lg p-2 mt-2"
-                        onMouseEnter={handleMenuMousePEnter}
-                        onMouseLeave={handleMenuMousePLeave}
-                      >
+                    {route.label}
+                  </Link>
+                  {!samePath && (
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
+                  )}
+                  {isDropdownOpen && activeMenuItem === route.label && (
+                    <div className=" absolute top-full left-0 bg-text-footer  w-24  border-solid rounded-sm">
+                      {activeMenuItem === "Products" && (
                         <ul className="space-y-2">
                           <li>
                             <Link href="/products/Ensō-i">
@@ -109,64 +75,22 @@ export const Header = () => {
                             </Link>
                           </li>
                         </ul>
-                      </div>
-                    )}
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
-                  </nav>
-                ) : MenuShow ? (
-                  <nav
-                    className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8 relative"
-                    key={route.label}
-                    onMouseEnter={handleMenuMouseEnter}
-                    onMouseLeave={handleMenuMouseLeave}
-                  >
-                    <Link
-                      href={route.to}
-                      className={`text-base  font-sans font-medium leading-6 text-black-text ${
-                        samePath
-                          ? " underline-offset-8 underline decoration-2"
-                          : "no-underline"
-                      }`}
-                    >
-                      {route.label}
-                    </Link>
-                    {showWhyUsMenu && (
-                      <div
-                        onMouseEnter={handleWhyUsMouseEnter}
-                        onMouseLeave={handleWhyUsMouseLeave}
-                        className="absolute z-50  w-32 bg-white rounded-lg shadow-lg p-2 mt-2"
-                      >
+                      )}
+
+                      {activeMenuItem === "Why Us" && (
                         <ul className="space-y-2">
                           <li>
-                            <Link href="/enso-core#tech">
+                            <Link href="/enso-core#technology">
                               <p className="text-gray-800 hover:text-indigo-600">
                                 Technology
                               </p>
                             </Link>
                           </li>
                         </ul>
-                      </div>
-                    )}
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
-                  </nav>
-                ) : (
-                  <nav
-                    className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
-                    key={route.label}
-                  >
-                    <Link
-                      href={route.to}
-                      className={`text-base  font-sans font-medium leading-6 text-black-text ${
-                        samePath
-                          ? " underline-offset-8 underline decoration-2"
-                          : "no-underline"
-                      }`}
-                    >
-                      {route.label}
-                    </Link>
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gray-text"></span>
-                  </nav>
-                )}
+                      )}
+                    </div>
+                  )}
+                </nav>
               </>
             );
           })}

@@ -2,9 +2,9 @@ import { ArrowIcon } from "@/assets/svgs/arrow";
 import { AnimationDiv } from "@/components/client/animation-item";
 import { SetUS } from "@/constants/setUs";
 import type { Metadata } from "next";
-import BG from "../../public/lOGO-01-02.png";
-import Right from "../../public/Icons-zeros-left.png";
-import Left from "../../public/Icons-zeros-right.png";
+import BG from "../../public/LG-Logo.png";
+import MdLogo from "../../public/md-Logo.png";
+import SmLogo from "../../public/sm-Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 export const metadata: Metadata = {
@@ -18,8 +18,26 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <section className="flex justify-center items-center container mx-auto overflow-hidden px-12">
+      <section className="flex justify-center items-center ">
         <Image
+          alt="BGs"
+          src={BG}
+          className=" 2xl:w-full hidden 2xl:block"
+          placeholder="blur"
+        />
+        {/* <Image
+          alt="BGMd"
+          src={MdLogo}
+          className="w-full 2xl:hidden"
+          placeholder="blur"
+        /> */}
+        <Image
+          alt="BGSm"
+          src={SmLogo}
+          className="w-full lg:w-4/5 2xl:hidden"
+          placeholder="blur"
+        />
+        {/* <Image
           alt="BG"
           src={Right}
           className=" 2xl:hidden w-1/2 animate-pulse"
@@ -28,7 +46,7 @@ export default function Home() {
         <Image
           alt="BGs"
           src={BG}
-          className=" 2xl:w-full w-3/4"
+          className=" 2xl:w-full w-4/5"
           placeholder="blur"
         />
         <Image
@@ -36,7 +54,7 @@ export default function Home() {
           src={Right}
           className=" 2xl:hidden w-1/2 animate-pulse"
           placeholder="blur"
-        />
+        /> */}
       </section>
 
       <AnimationDiv>

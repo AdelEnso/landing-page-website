@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import Firm from "../../../public/firm.png";
 import History from "../../../public/time-line.png";
+import { Histroy } from "@/components/client/history";
 
 const OurTeam = () => {
   return (
@@ -34,12 +35,13 @@ const OurTeam = () => {
           alt="FIRM"
         />
       </section>
-      <section className="container mx-auto px-12">
-        <Image
+      <section className="container mx-auto px-12  ">
+        <Histroy />
+        {/* <Image
           src={History}
           className="w-full h-auto -rotate-[0.02deg]"
           alt="HISTORY"
-        />
+        /> */}
       </section>
       <section className="container mx-auto px-12" id="team">
         <p className="text-center text-base text-dec-text  font-medium ">
@@ -59,8 +61,8 @@ const OurTeam = () => {
                 <Image
                   src={item.image}
                   className="transition duration-300 ease-in-out hover:scale-110 rounded bg-[#EFE8E8]"
-                  width={400}
-                  height={400}
+                  width={300}
+                  height={300}
                   alt={item.name}
                 />
               </div>
@@ -88,8 +90,8 @@ const OurTeam = () => {
                 <Image
                   src={item.image}
                   className="transition duration-300 ease-in-out hover:scale-110 rounded"
-                  width={400}
-                  height={400}
+                  width={300}
+                  height={300}
                   alt={item.name}
                 />
               </div>
