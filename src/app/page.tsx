@@ -4,7 +4,7 @@ import { SetUS } from "@/constants/setUs";
 import type { Metadata } from "next";
 import BG from "../../public/LG-Logo.png";
 import MdLogo from "../../public/md-Logo.png";
-import SmLogo from "../../public/LG-Logo.png";
+import SmLogo from "../../public/Test-Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function Home() {
         <Image
           alt="BGSm"
           src={SmLogo}
-          className="w-11/12 2xl:hidden object-contain"
+          className="w-full relative lg:bottom-16  2xl:hidden"
           placeholder="blur"
         />
         {/* <Image
