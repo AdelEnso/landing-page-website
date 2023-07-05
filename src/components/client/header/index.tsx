@@ -31,22 +31,28 @@ export const Header = () => {
         >
           {!mobileMenuOpen && <HamburgurIcon />}
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 items-center">
           {ROUTES.map((route) => {
             const samePath = pathname === route.to;
 
             return (
               <>
                 <nav
-                  className=" group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
+                  className={`${
+                    route.isButton
+                      ? "group p-2  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:  bg-[#BABABA] rounded "
+                      : "group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
+                  }`}
                   onMouseEnter={() => handleDropdownToggle(route.label)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
                   key={route.label}
                 >
                   <Link
                     href={route.to}
-                    className={`text-base  font-sans font-medium leading-6 text-black-text ${
-                      samePath
+                    className={`text-base  font-sans font-medium leading-6 ${
+                      route.isButton ? "text-white" : "text-black-text"
+                    } ${
+                      samePath && !route.isButton
                         ? " underline-offset-8 underline decoration-2"
                         : "no-underline"
                     }`}
@@ -83,6 +89,13 @@ export const Header = () => {
                             <Link href="/enso-core#technology">
                               <p className="text-gray-800 hover:text-indigo-600">
                                 Technology
+                              </p>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/enso-core#RND">
+                              <p className="text-gray-800 hover:text-indigo-600">
+                                RND
                               </p>
                             </Link>
                           </li>

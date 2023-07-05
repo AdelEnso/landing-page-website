@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Firm from "../../../public/firm.png";
-import History from "../../../public/time-line.png";
+import History from "../../../public/present.png";
 import { Histroy } from "@/components/client/history";
 
 const OurTeam = () => {
@@ -36,12 +36,13 @@ const OurTeam = () => {
         />
       </section>
       <section className="container mx-auto px-12  ">
-        <Histroy />
-        {/* <Image
-          src={History}
-          className="w-full h-auto -rotate-[0.02deg]"
-          alt="HISTORY"
-        /> */}
+        <Histroy>
+          <Image
+            src={History}
+            className="w-full h-auto -rotate-[0.02deg]"
+            alt="HISTORY"
+          />
+        </Histroy>
       </section>
       <section className="container mx-auto px-12" id="team">
         <p className="text-center text-base text-dec-text  font-medium ">

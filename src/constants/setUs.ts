@@ -4,7 +4,7 @@ import { TechIcon } from "@/assets/svgs/tech";
 import ServiceBg from "../../public/Engine Icon-01-01.png";
 import Pep from "../../public/pep-01.png";
 import Tech from "../../public/tech.png";
-import Prod from "../../public/product.png";
+import Prod from "../../public/Pimage.png";
 export const SetUS = [
   {
     label: "Our Technology",

@@ -93,7 +93,7 @@ export const Form = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://33b0-87-201-164-104.ngrok-free.app/contact",
+          "http://nodeemail-env.eba-645penqy.us-east-1.elasticbeanstalk.com/contact",
           {
             method: "POST",
             headers: {
@@ -124,7 +124,7 @@ export const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mt-24">
+    <form onSubmit={handleSubmit} className="mt-12">
       <div className="mb-12">
         <label htmlFor="name" className="flex items-center">
           <UserIcon />

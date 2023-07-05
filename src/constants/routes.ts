@@ -1,9 +1,5 @@
 export const ROUTES = [
   {
-    label: "Home",
-    to: "/",
-  },
-  {
     label: "Products",
     to: "/enso-core#products",
   },
@@ -19,8 +15,5 @@ export const ROUTES = [
     label: "Firm",
     to: "/our-team",
   },
-  {
-    label: "Contact",
-    to: "/contact-us",
-  },
+  { label: "Request A Demo", to: "/contact-us", isButton: true },
 ];
