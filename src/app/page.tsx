@@ -34,7 +34,7 @@ export default function Home() {
         <Image
           alt="BGSm"
           src={SmLogo}
-          className="w-full relative lg:bottom-16  2xl:hidden"
+          className="w-full relative lg:bottom-8  2xl:hidden"
           placeholder="blur"
         />
         {/* <Image
