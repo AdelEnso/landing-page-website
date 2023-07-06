@@ -1,4 +1,4 @@
-import DgIm from "../../public/Thumb01.png";
+import DgIm from "../../public/Thumb-01.png";
 import ThIm from "../../public/hacker1.png";
 import Pen from "../../public/Penteration.png";
 export const SERVICES = [
