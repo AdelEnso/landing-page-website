@@ -22,7 +22,7 @@ export default function Home() {
         <Image
           alt="BGs"
           src={BG}
-          className=" 2xl:w-full hidden 2xl:block"
+          className=" 2xl:w-11/12 hidden 2xl:block"
           placeholder="blur"
         />
         {/* <Image

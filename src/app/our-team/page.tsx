@@ -5,18 +5,20 @@ import React from "react";
 import Firm from "../../../public/firm.png";
 import History from "../../../public/present.png";
 import { Histroy } from "@/components/client/history";
+import { TimeLine } from "@/components/server/timeline";
 
 const OurTeam = () => {
   return (
     <>
-      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center mt-5">
+      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center ">
         About Ensō Lab
       </h1>
-      <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
+
       <p className="text-dec-text text-xs  mt-2 font-medium md:text-sm text-center">
         Is a research-driven tech startup developing cyber security solutions
         for the protection of information assets and communication technologies.
       </p>
+      <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
       <section className="container mx-auto px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
         <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-12 2xl:mt-0 order-2 lg:order-1">
           Our commitment to R&D enables us to strategize for cyber attack
@@ -35,22 +37,18 @@ const OurTeam = () => {
           alt="FIRM"
         />
       </section>
-      <section className="container mx-auto px-12  ">
-        <Histroy>
-          <Image
-            src={History}
-            className="w-full h-auto -rotate-[0.02deg]"
-            alt="HISTORY"
-          />
-        </Histroy>
+      <section className="container mx-auto px-12  mb-10">
+        {/* <Histroy> */}
+        <TimeLine />
+        {/* </Histroy> */}
       </section>
       <section className="container mx-auto px-12" id="team">
-        <p className="text-center text-base text-dec-text  font-medium ">
-          MEET THE TEAM
-        </p>
-        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center font-bold">
-          Leadership connects start-up with strong knowledge and experience.
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center ">
+          Meet The Team
         </h1>
+        <p className="text-dec-text text-xs  mt-2 font-medium md:text-sm text-center">
+          Leadership connects start-up with strong knowledge and experience.
+        </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <div className="flex flex-wrap gap-4 justify-center cursor-pointer items-center mt-20">
           {MANAGEMENT.map((item, key) => (

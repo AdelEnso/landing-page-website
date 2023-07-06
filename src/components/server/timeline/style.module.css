@@ -1,0 +1,25 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drawline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animatefadein {
+  animation: fadein 0.5s forwards;
+}
+
+.animatedrawline {
+  animation: drawline 0.5s forwards;
+}

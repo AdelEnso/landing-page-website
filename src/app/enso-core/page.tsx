@@ -48,7 +48,7 @@ const EnsoCore = () => {
         </div>
         <Image
           src={Brain}
-          className="w-3/5   h-auto  object-contain  lg:bottom-6 relative order-1 lg:order-2"
+          className="w-3/5   h-auto  object-contain  lg:bottom-6 relative order-1 lg:order-2 right-6 lg:right-0"
           alt="CORE"
           placeholder="blur"
         />
@@ -119,10 +119,8 @@ const EnsoCore = () => {
                     placeholder="blur"
                     className=" w-full h-auto"
                   />
-                  {/* <div className="flex justify-center ">
-                    <item.Icon />
-                  </div> */}
-                  <p className=" text-xl text-black-text text-center e font-bold">
+
+                  <p className=" text-xl text-black-text text-center  font-bold">
                     {item.name}
                   </p>
 
@@ -137,7 +135,7 @@ const EnsoCore = () => {
       </section>
       <section className="mt-20 container mx-auto px-12 " id="RND">
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
-          Research and Development
+          Research & Development
         </h1>
         <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
           we are actively conducting groundbreaking research and development to
@@ -153,7 +151,7 @@ const EnsoCore = () => {
 
           <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
             <p className="text-center text-dec-text text-lg">
-              Handwear Transactional Memory Architecture
+              Hardwear Transactional Memory Architecture
             </p>
           </div>
           <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">

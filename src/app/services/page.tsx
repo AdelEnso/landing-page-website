@@ -1,6 +1,13 @@
 import { SERVICES } from "@/constants/services";
 import Image from "next/image";
-const ServiceItem = ({ name, Icon, description, points, reverse }: any) => (
+const ServiceItem = ({
+  name,
+  Icon,
+  description,
+  points,
+  reverse,
+  isRotate,
+}: any) => (
   <div
     className={`flex flex-col lg:flex-row items-center justify-start mb-8 ${
       reverse ? "lg:flex-row-reverse" : ""
@@ -22,7 +29,7 @@ const ServiceItem = ({ name, Icon, description, points, reverse }: any) => (
     <div className="flex-shrink-0 w-1/3 ml-4">
       <Image
         src={Icon}
-        className={` ${
+        className={` ${isRotate && "rotate-12"} ${
           name === "Threat Intellegence" ? "w-full" : "w-full"
         }  h-auto`}
         alt={name}
@@ -47,6 +54,7 @@ const Services = () => {
           <ServiceItem
             key={index}
             name={service.name}
+            isRotate={service.t}
             Icon={service.Icon}
             description={service.description}
             points={service.points}

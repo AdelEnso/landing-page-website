@@ -35,13 +35,13 @@ export const MANAGEMENT = [
 export const Engineering = [
   {
     name: "Abdul Salam",
-    title: "Project Manager",
+    title: "Project Manager/Team Lead",
     image: "/abdul.png",
     bio: "Skilled computer researcher with expertise in OS architecture and technical Management. Collaborated in projects funded by BK21, SK Hynix, and NRF of South Korea. Effective team lead, oversee projects, and deliver successful outcomes through efficient planning, coordination, and execution.",
   },
   {
     name: "Muhammad Asim",
-    title: "Team Leader",
+    title: "Security Consultant/Tech. Team Lead",
     image: "/asim.png",
     bio: "Cyber Security Consultant having expertise in Governance, Risk & Compliance (GRC), IT and OT Audit, Vulnerability Assessment and Penetration Testing (VAPT), IAM, Digital Forensics, Cloud Security, and IoT Security.",
   },
@@ -61,7 +61,7 @@ export const Engineering = [
     name: "Umer Mansoor",
     title: "Full Stack Developer",
     image: "/umer.png",
-    bio: "Experienced full stack software engineer having experience in backed development technologies including NodeJs, NestJs, REST full API, SOAP API and system level APIs.",
+    bio: "Experienced full stack software engineer having experience in backend development technologies including NodeJs, NestJs, REST full API, SOAP API and system level APIs.",
   },
   {
     name: "Adel Al Lham",

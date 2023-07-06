@@ -111,6 +111,7 @@ export const Form = () => {
           emailRef.current.value = "";
           subjectRef.current.value = "";
           messageRef.current.value = "";
+          alert("Email Sended");
         } else {
           // Request failed, handle the error
           console.error("Failed to post data");

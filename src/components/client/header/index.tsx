@@ -31,7 +31,7 @@ export const Header = () => {
         >
           {!mobileMenuOpen && <HamburgurIcon />}
         </div>
-        <div className="hidden lg:flex lg:gap-x-12 items-center">
+        <div className="hidden lg:flex lg:gap-x-6 items-center">
           {ROUTES.map((route) => {
             const samePath = pathname === route.to;
 

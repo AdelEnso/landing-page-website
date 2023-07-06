@@ -1,19 +1,20 @@
 export const ROUTES = [
   {
-    label: "Products",
-    to: "/enso-core#products",
-  },
-  {
     label: "Why Us",
     to: "/enso-core",
   },
   {
-    label: "Services",
-    to: "/services",
+    label: "Products",
+    to: "/enso-core#products",
   },
   {
     label: "Firm",
     to: "/our-team",
+  },
+
+  {
+    label: "Services",
+    to: "/services",
   },
   { label: "Request A Demo", to: "/contact-us", isButton: true },
 ];
