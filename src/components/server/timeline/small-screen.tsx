@@ -5,13 +5,14 @@ interface props {
     timeTop: string;
     desc: string;
     title: string;
+    isBlur: boolean;
   }[];
 }
 
 export const TimeLineSmall: React.FC<props> = ({ events }) => {
   return (
     <>
-      <div className="mx-auto max-w-lg flex lg:hidden my-32">
+      <div className="mx-auto max-w-lg flex lg:hidden my-16">
         <div className="relative">
           <div className="border-r-2 border-nav absolute h-full top-0 "></div>
 
@@ -33,10 +34,18 @@ export const TimeLineSmall: React.FC<props> = ({ events }) => {
                   }`}</h3>
                 </div>
                 <div className={`pl-6`}>
-                  <p className="  text-xs text-left font-bold mt-2">
+                  <p
+                    className={`text-xs text-left font-bold mt-2 ${
+                      event.isBlur && "blur-sm"
+                    }`}
+                  >
                     {event.title} / {event.timeTop}
                   </p>
-                  <p className="text-gray-text text-sm  font-medium">
+                  <p
+                    className={`text-gray-text text-sm  font-medium ${
+                      event.isBlur && "blur-sm"
+                    }`}
+                  >
                     {event.desc}
                   </p>
                 </div>

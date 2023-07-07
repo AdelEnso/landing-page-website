@@ -5,6 +5,7 @@ interface props {
     timeTop: string;
     desc: string;
     title: string;
+    isBlur: boolean;
   }[];
 }
 export const TimeLine: React.FC<props> = ({ events }) => {
@@ -18,10 +19,18 @@ export const TimeLine: React.FC<props> = ({ events }) => {
                 <div
                   className={`flex flex-col items-center justify-center absolute bottom-8 `}
                 >
-                  <p className="  text-xs text-center font-bold ">
+                  <p
+                    className={`text-xs text-center font-bold ${
+                      event.isBlur && "blur-sm"
+                    }`}
+                  >
                     {event.title}
                   </p>
-                  <p className=" text-nav text-xs text-center font-medium w-40">
+                  <p
+                    className={`  text-xs text-center font-normal w-48 ${
+                      event.isBlur && "blur-sm"
+                    }`}
+                  >
                     {event.desc}
                   </p>
                   <div className="w-0.5 h-[20px] lg:h-[60px] bg-[#DCDCDC]"></div>
@@ -42,10 +51,18 @@ export const TimeLine: React.FC<props> = ({ events }) => {
                   className={`flex flex-col items-center justify-center absolute top-8 `}
                 >
                   <div className="w-0.5 h-[20px] lg:h-[60px] bg-[#DCDCDC]"></div>
-                  <p className="  text-xs text-center font-bold ">
+                  <p
+                    className={`text-xs text-center font-bold ${
+                      event.isBlur && "blur-sm"
+                    }`}
+                  >
                     {event.title}
                   </p>
-                  <p className=" text-nav text-xs text-center font-medium w-48">
+                  <p
+                    className={`  text-xs text-center font-normal w-48 ${
+                      event.isBlur && "blur-sm"
+                    }`}
+                  >
                     {event.desc}
                   </p>
                 </div>

@@ -25,36 +25,13 @@ export default function Home() {
           className=" 2xl:w-11/12 hidden 2xl:block"
           placeholder="blur"
         />
-        {/* <Image
-          alt="BGMd"
-          src={MdLogo}
-          className="w-full 2xl:hidden"
-          placeholder="blur"
-        /> */}
+
         <Image
           alt="BGSm"
           src={SmLogo}
-          className="w-full relative lg:bottom-8  2xl:hidden"
+          className="w-11/12 2xl:hidden "
           placeholder="blur"
         />
-        {/* <Image
-          alt="BG"
-          src={Right}
-          className=" 2xl:hidden w-1/2 animate-pulse"
-          placeholder="blur"
-        />
-        <Image
-          alt="BGs"
-          src={BG}
-          className=" 2xl:w-full w-4/5"
-          placeholder="blur"
-        />
-        <Image
-          alt="BGss"
-          src={Right}
-          className=" 2xl:hidden w-1/2 animate-pulse"
-          placeholder="blur"
-        /> */}
       </section>
 
       <AnimationDiv>
