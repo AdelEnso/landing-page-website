@@ -66,7 +66,7 @@ const OurTeam = () => {
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center ">
           Meet The Team
         </h1>
-        <p className="text-dec-text text-xs  mt-2 font-medium md:text-sm text-center">
+        <p className="text-center text-dec-text mt-2  font-medium text-lg">
           Leadership connects start-up with strong knowledge and experience.
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
@@ -95,7 +95,7 @@ const OurTeam = () => {
             </Link>
           ))}
         </div>
-        <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-center font-bold mt-20">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center  mt-8">
           Engineering grounded in complex compute science and industry
         </h1>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
