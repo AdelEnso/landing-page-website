@@ -14,16 +14,16 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
   const product = Products.find((prod) => prod.name === productName);
   console.log(product);
   return (
-    <section className="container mx-auto px-12">
-      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-left font-bold">
+    <section className="container mx-auto md:px-12">
+      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-left font-bold mx-4">
         {productName}
       </h1>
-      <p className="text-left text-dec-text mt-2 md:mt-8 text-lg font-medium mb-10">
+      <p className="text-left text-dec-text mt-2 md:mt-8 text-lg font-medium mb-10  mx-4">
         {product?.deatails.desc}
       </p>
 
-      <div className=" mb-4 p-4">
-        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left font-bold p-2">
+      <div className=" mb-4 mx-4">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left font-bold">
           Key Features
         </h1>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
@@ -78,7 +78,7 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
             <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
               Future Support Operating Systems
             </h3>
-            <div className="flex">
+            <div className="flex flex-wrap">
               {product?.deatails?.future?.map((item, key) => (
                 <p
                   className=" text-base md:text-lg  text-dec-text  mb-2 px-1"

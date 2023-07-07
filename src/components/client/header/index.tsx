@@ -121,14 +121,14 @@ export const Header = () => {
       >
         <div className="bg-black-bg absolute inset-0 p-4">
           <div className="flex justify-between items-center">
-            <div>
+            <Link href="/" onClick={() => setMobileMenuOpen(false)}>
               <h1 className="text-text-footer text-2xl font-bold  ">
                 Ensō Lab
               </h1>
               <p className=" text-nav text-sm ">
                 Empowering Next Generation Software Solutions
               </p>
-            </div>
+            </Link>
             <CancelIcon onClick={() => setMobileMenuOpen(false)} />
           </div>
           <hr className=" w-32 h-[0.3px]  my-4 bg-nav border-0  mb-20" />

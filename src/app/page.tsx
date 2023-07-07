@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       <AnimationDiv>
-        <section className="flex justify-center  flex-col mt-12 container mx-auto px-12 ">
+        <section className="flex justify-center  flex-col mt-12 container mx-auto px-4 md:px-12 ">
           <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
             What sets us apart
           </h1>
@@ -103,7 +103,7 @@ export default function Home() {
         </section>
       </AnimationDiv>
       <AnimationDiv>
-        <section className=" container mx-auto mt-12 items-center flex flex-col px-12">
+        <section className=" container mx-auto mt-12 items-center flex flex-col px-4 md:px-12">
           <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
             Ensō Core
           </h1>

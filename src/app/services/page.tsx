@@ -17,7 +17,7 @@ const ServiceItem = ({
       <h3 className="text-xl font-bold mb-2">{name}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
       {points && (
-        <ul className="list-disc list-inside">
+        <ul className="list-disc mx-3 md:mx-0 md:list-inside">
           {points.map((point: any, index: any) => (
             <li key={index} className="text-gray-600">
               {point}
@@ -26,21 +26,15 @@ const ServiceItem = ({
         </ul>
       )}
     </div>
-    <div className="flex-shrink-0 w-1/3 ml-4">
-      <Image
-        src={Icon}
-        className={` ${isRotate && "rotate-12"} ${
-          name === "Threat Intellegence" ? "w-full" : "w-full"
-        }  h-auto`}
-        alt={name}
-      />
+    <div className="flex-shrink-0 w-full lg:w-1/3 2xl:w-5/12  ">
+      <Image src={Icon} className={` ${isRotate && "rotate-12"}`} alt={name} />
     </div>
   </div>
 );
 
 const Services = () => {
   return (
-    <section className="container mx-auto px-12 ">
+    <section className="container mx-auto px-4 md:px-12 ">
       <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
         Our Services
       </h1>

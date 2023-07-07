@@ -6,6 +6,9 @@ import Firm from "../../../public/firm.png";
 import History from "../../../public/present.png";
 import { Histroy } from "@/components/client/history";
 import { TimeLine } from "@/components/server/timeline";
+import { TimeLineSmall } from "@/components/server/timeline/small-screen";
+import { futureEvents, pastEvents } from "@/constants/history";
+import { AnimationDiv } from "@/components/client/animation-item";
 
 const OurTeam = () => {
   return (
@@ -19,30 +22,43 @@ const OurTeam = () => {
         for the protection of information assets and communication technologies.
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
-      <section className="container mx-auto px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
+      <section className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
         <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-12 2xl:mt-0 order-2 lg:order-1">
-          Our commitment to R&D enables us to strategize for cyber attack
-          prevention, cryptographic solutions, and communication technologies.
-          Solutions boost privacy, efficiency, compliance, and cost
-          effectiveness in businesses. Embracing innovation and digital
-          challenges, we’re poised to significantly influence the technology
-          landscape. Believing in mindfulness, simplicity, and ethics, we ensure
-          our innovative approach benefits clients’ businesses and society
-          positively.
+          Welcome to EnsoLab - a place where ideas come to life. Our journey
+          begins at the crossroads of innovation and research & development
+          (R&D), transforming cutting-edge concepts into tangible and intangible
+          products that significantly impact the digital world.
         </p>
 
         <Image
           src={Firm}
           className="w-2/4  h-auto  object-contain lg:left-24   lg:bottom-6 relative order-1 lg:order-2"
+          placeholder="blur"
           alt="FIRM"
         />
       </section>
-      <section className="container mx-auto px-12  mb-10">
-        {/* <Histroy> */}
-        <TimeLine />
-        {/* </Histroy> */}
+      <section className="container mx-auto px-4 md:px-12 mb-20">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center ">
+          Our History
+        </h1>
+
+        <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
+        <Histroy
+          past={
+            <AnimationDiv>
+              <TimeLine events={pastEvents} />
+              <TimeLineSmall events={pastEvents} />
+            </AnimationDiv>
+          }
+          present={
+            <AnimationDiv>
+              <TimeLine events={futureEvents} />
+              <TimeLineSmall events={futureEvents} />
+            </AnimationDiv>
+          }
+        />
       </section>
-      <section className="container mx-auto px-12" id="team">
+      <section className="container mx-auto px-4 md:px-12" id="team">
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center ">
           Meet The Team
         </h1>

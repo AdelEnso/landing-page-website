@@ -1,11 +1,17 @@
 "use client";
 import { Switch } from "@headlessui/react";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export const Histroy = ({ children }: { children: React.ReactNode }) => {
+interface props {
+  past: React.ReactNode;
+  present: React.ReactNode;
+}
+export const Histroy: React.FC<props> = ({ past, present }) => {
   const [enabled, setEnabled] = useState(false);
   return (
     <>
+      {!enabled ? past : present}
+
       <div className="flex justify-center items-center rounded relative right-6">
         <p
           className={`font-medium text-lg  ${
@@ -43,7 +49,6 @@ export const Histroy = ({ children }: { children: React.ReactNode }) => {
           Next Steps
         </p>
       </div>
-      {children}
     </>
   );
 };

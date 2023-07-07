@@ -1,11 +1,13 @@
 import { AnimationDiv } from "@/components/client/animation-item";
-import { Products } from "@/constants/products";
+import Blub from "../../../public/Bulb.png";
+import BlubC from "../../../public/Bulb-color.png";
 import Brain from "../../../public/Brain-01.png";
 import { Technologies } from "@/constants/technologies";
 import ProdImage from "../../../public/product1.png";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { Rnd } from "@/components/client/rnd";
 export const metadata = {
   title: "Enso Core",
   description: "Why Us Page",
@@ -21,7 +23,7 @@ const EnsoCore = () => {
         extraordinary solutions.
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
-      <section className="container mx-auto px-12 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between mt-10">
+      <section className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between mt-10">
         <div className="mt-12 order-2 lg:order-1">
           <p className=" text-lg  md:text-xl 2xl:text-2xl text-black-text font-medium text-center lg:text-left">
             Revolutionizing Real-World Problem Solving
@@ -57,7 +59,7 @@ const EnsoCore = () => {
           placeholder="blur"
         />
       </section>
-      <section className="mt-20 container mx-auto" id="products">
+      <section className="mt-20 container mx-auto  px-4 md:px-12" id="products">
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
           Our Product Portfolio
         </h1>
@@ -66,12 +68,12 @@ const EnsoCore = () => {
           informed, data-driven decisions that propel growth and success.”
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
-        <div className=" px-12  mt-12 grid grid-cols-1 lg:grid-cols-3 gap-3 place-items-center">
+        <div className="  mt-12 grid grid-cols-1 lg:grid-cols-3 gap-3 place-items-center">
           <Link href="/products/Ensō-i">
             <AnimationDiv>
               <p className=" text-3xl text-black-text">Ensō-i</p>
               <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
-              <p className="text-dec-text text-lg my-10">
+              <p className="text-dec-text text-lg mt-10">
                 Ensō-i is a hardware-accelerated Artificial Intelligence-based
                 threat prevention system.
               </p>
@@ -88,7 +90,7 @@ const EnsoCore = () => {
             <AnimationDiv>
               <p className=" text-3xl text-black-text">Ensō RNG-aaS</p>
               <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
-              <p className="text-dec-text text-lg my-10">
+              <p className="text-dec-text text-lg mt-10">
                 RNGaaS solution, providing truly random, cryptographically
                 robust, and statistically independent numbers at all times.
               </p>
@@ -96,7 +98,10 @@ const EnsoCore = () => {
           </Link>
         </div>
       </section>
-      <section className="mt-20 container mx-auto px-12 " id="technology">
+      <section
+        className="mt-20 container mx-auto px-4 md:px-12 "
+        id="technology"
+      >
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
           Our Technology
         </h1>
@@ -135,42 +140,19 @@ const EnsoCore = () => {
           })}
         </div>
       </section>
-      <section className="mt-20 container mx-auto px-12 " id="RND">
+      <section
+        className="mt-20 container mx-auto px-4 md:px-12  flex items-center justify-center flex-col"
+        id="RND"
+      >
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
           Research & Development
         </h1>
         <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
-          Our R&D is the driving force behind our creative ingenuity, pushing us
-          forward to devise advanced strategies for cyber attack prevention, to
-          create innovative cryptographic solutions, and to develop secure
-          communication technologies. We are not just about creating products,
-          we are committed to crafting solutions that transform lives and
-          businesses for the better tomorrow.
+          We are not just about creating products, we are committed to crafting
+          solutions that transform lives and businesses for the better tomorrow.
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
-        <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
-          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-            <p className="text-center text-dec-text text-lg">
-              True Random Number Generation (TRNG)
-            </p>
-          </div>
-
-          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-            <p className="text-center text-dec-text text-lg">
-              Hardwear Transactional Memory Architecture
-            </p>
-          </div>
-          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-            <p className="text-center text-dec-text text-lg">
-              Trusted Execution Environment (TEE)
-            </p>
-          </div>
-          <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-            <p className="text-center text-dec-text text-lg">
-              FPGA-based hardware design on post-quantum cryptography.
-            </p>
-          </div>
-        </div>
+        <Rnd />
       </section>
     </>
   );
