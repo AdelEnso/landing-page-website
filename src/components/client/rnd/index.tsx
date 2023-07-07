@@ -1,6 +1,6 @@
 "use client";
 import Blub from "../../../../public/Bulb.png";
-import BlubC from "../../../../public/Bulb-color.png";
+import BlubC from "../../../../public/Bulb-light.png";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
