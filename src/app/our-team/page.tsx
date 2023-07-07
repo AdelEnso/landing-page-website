@@ -14,7 +14,7 @@ const OurTeam = () => {
         About Ensō Lab
       </h1>
 
-      <p className="text-dec-text text-xs  mt-2 font-medium md:text-sm text-center">
+      <p className="text-center text-dec-text mt-2  font-medium text-lg">
         Is a research-driven tech startup developing cyber security solutions
         for the protection of information assets and communication technologies.
       </p>

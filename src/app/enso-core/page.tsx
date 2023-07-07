@@ -16,6 +16,10 @@ const EnsoCore = () => {
       <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
         Ensō Core
       </h1>
+      <p className="text-center text-dec-text mt-2  font-medium text-lg">
+        where computing power and human potential converge to create
+        extraordinary solutions.
+      </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
       <section className="container mx-auto px-12 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between mt-10">
         <div className="mt-12 order-2 lg:order-1">
@@ -114,17 +118,15 @@ const EnsoCore = () => {
                 <AnimationDiv className="p-6  ">
                   <Image
                     src={item.Icon}
-                    sizes="100vw"
                     alt={item.name}
                     placeholder="blur"
                     className=" w-full h-auto"
+                    quality={100}
                   />
-
                   <p className=" text-xl text-black-text text-center  font-bold">
                     {item.name}
                   </p>
-
-                  <p className="text-dec-text text-base my-2 text-center  h-12">
+                  <p className="text-dec-text text-base my-2 text-center ">
                     {item.decription}
                   </p>
                 </AnimationDiv>
@@ -138,8 +140,12 @@ const EnsoCore = () => {
           Research & Development
         </h1>
         <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
-          we are actively conducting groundbreaking research and development to
-          develop proactive and adaptive security solutions.
+          Our R&D is the driving force behind our creative ingenuity, pushing us
+          forward to devise advanced strategies for cyber attack prevention, to
+          create innovative cryptographic solutions, and to develop secure
+          communication technologies. We are not just about creating products,
+          we are committed to crafting solutions that transform lives and
+          businesses for the better tomorrow.
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">

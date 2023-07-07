@@ -44,7 +44,7 @@ const Services = () => {
       <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
         Our Services
       </h1>
-      <p className="text-center text-dec-text mt-2 md:mt-8 font-medium text-lg">
+      <p className="text-center text-dec-text mt-2  font-medium text-lg">
         Believing in mindfulness, simplicity, and ethics, we ensure our
         innovative approach benefits clients’ businesses and society positively.
       </p>
