@@ -44,7 +44,7 @@ export const TimeLine: React.FC<props> = ({ events }) => {
               <div
                 className={`w-6 h-6 border-2 border-nav rounded-full flex items-center justify-center  }`}
               >
-                <div className="w-4 h-4 bg-nav rounded-full"></div>
+                <div className="w-4 h-4 bg-dec-text rounded-full"></div>
               </div>
               {index % 2 === 0 ? (
                 <div

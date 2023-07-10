@@ -1,5 +1,5 @@
 import RNGImg from "../../public/Box.png";
-import AIImge from "../../public/spark.png";
+import AIImge from "../../public/Hand-01.png";
 import HTMIm from "../../public/Chipv1.png";
 
 export const Technologies = [

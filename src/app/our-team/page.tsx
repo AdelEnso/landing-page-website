@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Engineering, MANAGEMENT } from "@/constants/team";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,22 +19,20 @@ const OurTeam = () => {
       </h1>
 
       <p className="text-center text-dec-text mt-2  font-medium text-lg">
-        EnsoLab is a tech startup that strives to shape the future of the
-        digital world by transforming great ideas into reality.
+        it's a tech startup that strives to shape the future of the digital
+        world by transforming great ideas into reality.
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
-      <section className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
-        <div className="flex flex-col">
-          <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-6 lg:mt-6  order-2 lg:order-1 ">
+      <section className="container mx-auto px-4 md:px-2 xl:px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
+        <div className="flex flex-col order-2 lg:order-1">
+          <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-6 lg:mt-6   ">
             EnsoLab - a place where ideas come to life. Our journey begins at
-            the crossroads of innovation and research & development (R&D),
-            transforming cutting-edge concepts into tangible and intangible
+            the crossroads of innovation and research & development (R&D), where
+            we transform cutting-edge concepts into tangible and intangible
             products that significantly impact the digital world.
           </p>
           <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-6 lg:mt-1   order-2 lg:order-1 ">
-            As we navigate the exciting challenges of the digital world, we at
-            Enso Lab are striving to shape the future of technology. We are
-            committed to demonstrating that innovation, when steered by
+            We are committed to demonstrating that innovation, when steered by
             mindfulness, simplicity, and ethics, not only benefits our clients
             businesses but also has a positive impact on society.
           </p>

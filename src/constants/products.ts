@@ -3,8 +3,9 @@ export const Products = [
     id: 1,
     name: "Ensō-i",
     link: "/products/Ensō-i",
+    title: "Preventing a cyber attack before it happens",
     decription:
-      "Ensō-i is a hardware-accelerated Artificial Intelligence-based threat prevention system.",
+      "next-generation cybersecurity product offering Intelligent Threat Prevention and Neutralization. Powered by our patent-pending technology, Ensō i is designed to proactively identify and neutralize threats associated with trusted programs and applications in real time. Our mission with this product is to transform cybersecurity by providing an unparalleled level of protection.",
 
     deatails: {
       supported: "Linux(Kali, Parrot, Ubuntu, Debian)",
@@ -40,19 +41,19 @@ export const Products = [
       points: [
         {
           title: "A New Wave in Cybersecurity:",
-          desc: "Ensō i represents our ambitious vision for cybersecurity. By cutting off computing resources to potential threats at runtime, it can effectively disarm threat actors before they can cause harm. This forward-thinking strategy means your organization can remain several steps ahead of possible threats.",
+          desc: "Ensō i represents our ambitious vision for the future of cybersecurity. By cutting off computing resources to potential threats at runtime, it can effectively disarm threat actors before they can cause harm. This forward-thinking strategy enables your organization to stay several steps ahead of potential threats.",
         },
         {
           title: "Flexible and Scalable:",
-          desc: "We’ve designed Ensō i to be adaptable to any organization’s unique needs. As a standalone solution or an extra layer of security that can integrate with third-party MDR/NGAV/EPP/XDR solution without issue, Ensō i allows you to enhance your existing security setup without needing to overhaul your infrastructure.",
+          desc: "We've designed Ensō i to adapt to the unique needs of any organization. Whether used as a standalone solution or as an additional security layer that seamlessly integrates with third-party MDR, NGAV, EPP, or XDR solutions, Ensō i enables you to enhance your existing security setup without the need for a complete infrastructure overhaul.",
         },
         {
           title: "Unleashing the Potential of AI/ML:",
-          desc: "Ensō i harnesses the power of Artificial Intelligence. With advanced Machine Learning algorithms to analyze low-level system statisics in real-time, it can swiftly recognize and respond to potential threats. Ensō i empowers your organization to stay proactive, mitigating the risk of devastating data breaches and cyber-attacks.",
+          desc: "Ensō i harnesses the power of Artificial Intelligence and advanced Machine Learning algorithms to analyze low-level system statistics in real-time. It swiftly recognizes and responds to potential threats, empowering your organization to stay proactive and significantly mitigate the risk of devastating data breaches and cyber-attacks.",
         },
         {
           title: "Real-Time User-Friendly Dashboard:",
-          desc: "An intuitive, easy-to-understand dashboard allows non-technical stakeholders to understand the organization's security posture. Ensō i provides a clear visual representation of current threats, risk scores, and recommended actions. The dashboard also allows users to drill down into the details of each risk or incident.",
+          desc: "Ensō i features an intuitive, easy-to-understand dashboard that enables users to comprehend the organization's security posture. It provides a clear visual representation of prevented threats, current threats, risk scores, existing backdoors (if any), and recommended actions. The dashboard also allows users to drill down into the details of each risk or incident.",
         },
       ],
       desc: "Intelligent Threat Prevention and Neutralization Next-Generation Cybersecurity with Ensō i We’re excited to introduce Ensō i, powered by our patent-pending technology. Our mission is to transform cybersecurity with Ensō i, designed to proactively identify and neutralize threats associated with trusted programs and applications in real-time, promising a level of protection that is beyond compare.",
@@ -62,6 +63,8 @@ export const Products = [
   {
     id: 2,
     name: "Ensō RNG-aaS",
+    title:
+      "A high-entropy, versatile random number generator ensuring superior cryptographic data security in diverse applications.",
     link: "/products/Ensō RNG-aaS",
     decription:
       "RNG-aaS solution, providing truly random, cryptographically robust, and statistically independent numbers at all times.",

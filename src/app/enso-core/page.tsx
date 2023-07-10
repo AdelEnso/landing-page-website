@@ -29,9 +29,9 @@ const EnsoCore = () => {
             Revolutionizing Real-World Problem Solving
           </p>
           <p className="text-dec-text text-xs 2xl:text-base  my-2 font-medium md:text-sm text-center lg:text-left">
-            Meet Ensō Core, our state-of-the-art computing framework designed to
-            tackle complex real-world challenges with unparalleled flexibility
-            and efficiency.
+            Introducing Ensō Core, our cutting-edge computing framework
+            engineered to tackle complex real-world digital challenges with
+            exceptional agility and optimal efficiency.
           </p>
           <p className=" text-lg  md:text-xl 2xl:text-2xl text-black-text font-medium text-center lg:text-left">
             Tailored Solutions for Diverse Challenges
@@ -40,16 +40,17 @@ const EnsoCore = () => {
             Ensō Core is fully customizable, meeting the unique needs of both
             organizations and individuals. Our aim is to provide users with a
             dynamic ecosystem that harnesses knowledge and information,
-            transforming their approach to problem-solving.
+            revolutionizing the traditional approach to problem-solving.
           </p>
           <p className=" text-lg  md:text-xl 2xl:text-2xl text-black-text font-medium text-center lg:text-left">
             Igniting Innovation in Emerging Fields
           </p>
           <p className="text-dec-text text-xs 2xl:text-base  my-2 font-medium md:text-sm text-center lg:text-left">
             Ensō Core serves as an innovation accelerator in unexplored domains.
-            By enhancing business decision-making with intelligence and acumen,
-            Ensō Core equips organizations to confidently and precisely navigate
-            the intricacies of today’s world.
+            By empowering business decisions with enriched intelligence and
+            strategic insight, Ensō Core equips organizations to navigate
+            through the complexities of the modern world with unrivaled
+            precision and confidence.
           </p>
         </div>
         <Image
@@ -71,9 +72,9 @@ const EnsoCore = () => {
         <div className="  mt-12 grid grid-cols-1 lg:grid-cols-3 gap-3 place-items-center">
           <Link href="/products/Ensō-i">
             <AnimationDiv>
-              <p className=" text-3xl text-black-text">Ensō-i</p>
+              <p className=" text-3xl text-black-text text-center">Ensō-i</p>
               <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
-              <p className="text-dec-text text-lg mt-10">
+              <p className="text-dec-text text-lg mt-5 text-center">
                 Ensō-i is a hardware-accelerated Artificial Intelligence-based
                 threat prevention system.
               </p>
@@ -88,9 +89,11 @@ const EnsoCore = () => {
           />
           <Link href="/products/Ensō RNG-aaS">
             <AnimationDiv>
-              <p className=" text-3xl text-black-text">Ensō RNG-aaS</p>
+              <p className=" text-3xl text-black-text text-center">
+                Ensō RNG-aaS
+              </p>
               <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
-              <p className="text-dec-text text-lg mt-10">
+              <p className="text-dec-text text-lg mt-5 text-center">
                 RNGaaS solution, providing truly random, cryptographically
                 robust, and statistically independent numbers at all times.
               </p>
@@ -105,16 +108,18 @@ const EnsoCore = () => {
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
           Our Technology
         </h1>
-        <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
-          Enso Lab offers a unique technology network which gives you access to
-          a large state-of-the-art application pool.
+        <p className="text-center text-dec-text mt-2 text-lg">
+          Technology is best when great minds come together
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
-        <p className="text-center text-dec-text my-8 text-lg">
-          3 x PCT Patent Pending, Unpublished, Filed. Our intellectual property
-          portfolio consists of three work-in-progress PCT patent drafts, which
-          are currently filed and unpublished. These patents cover the following
-          innovative technologies:
+        <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
+          Enso Lab offers a unique technology network, giving you access to an
+          expansive, state-of-the-art application pool.
+        </p>
+        <p className="text-center text-dec-text  text-lg">
+          3 x PCT Patent Pending, Unpublished, Filed. Enso Lab offers a unique
+          technology network, giving you access to an expansive,
+          state-of-the-art application pool
         </p>
         <div className=" mt-12 grid grid-cols-1 lg:grid-cols-3  lg:divide-x lg:divide-border-color lg:divide-solid place-items-center">
           {Technologies.map((item, key) => {

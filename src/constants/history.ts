@@ -52,7 +52,7 @@ export const futureEvents = [
   {
     timeTop: "November 2023",
     title: "The Improvement",
-    isBlur: false,
+    isBlur: true,
     desc: "Using feedback from the beta testing phase, critical improvements and necessary adjustments are made to the Enso-i. It is now ready for a more extensive rollout.",
   },
   {

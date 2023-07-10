@@ -15,15 +15,19 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
   console.log(product);
   return (
     <section className="container mx-auto md:px-12">
-      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-left font-bold mx-4">
+      <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center  mx-4">
         {productName}
       </h1>
-      <p className="text-left text-dec-text mt-2 md:mt-8 text-lg font-medium mb-10  mx-4">
+      <p className="text-center text-dec-text mt-2  font-medium text-lg">
+        {product?.title}
+      </p>
+      <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
+      <p className="text-center text-dec-text mt-2 md:mt-8 text-lg font-medium mb-10  mx-4">
         {product?.deatails.desc}
       </p>
 
       <div className=" mb-4 mx-4">
-        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left font-bold">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left">
           Key Features
         </h1>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">
@@ -48,7 +52,7 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
       {product?.deatails.application && (
         <>
           <div className=" mb-4 p-4">
-            <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left font-bold p-2">
+            <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left  p-2">
               Applications
             </h1>
             <div className="grid grid-cols-1 gap-4">

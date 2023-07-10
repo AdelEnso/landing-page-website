@@ -22,32 +22,33 @@ export const TimeLineSmall: React.FC<props> = ({ events }) => {
                 key={index}
                 className={`mb-10 ${index % 2 === 0 ? "flex-row-reverse" : ""}`}
               >
-                <div className="flex justify-start relative right-3">
+                <div className="flex justify-start relative right-[10px]">
                   <div
-                    className={`w-6 h-6 border-2 border-nav rounded-full flex items-center justify-center`}
-                    style={{ animationDelay: `${index * 0.2}s` }}
+                    className={`w-5 h-5 border-2 border-nav rounded-full flex items-center justify-center`}
                   >
-                    <div className="w-4 h-4 bg-nav rounded-full"></div>
+                    <div className="w-4 h-4 bg-dec-text rounded-full"></div>
                   </div>
-                  <h3 className=" ml-4 font-bold text-lg">{`Step ${
-                    index + 1
-                  }`}</h3>
-                </div>
-                <div className={`pl-6`}>
-                  <p
-                    className={`text-xs text-left font-bold mt-2 ${
-                      event.isBlur && "blur-sm"
-                    }`}
-                  >
-                    {event.title} / {event.timeTop}
-                  </p>
-                  <p
-                    className={`text-gray-text text-sm  font-medium ${
-                      event.isBlur && "blur-sm"
-                    }`}
-                  >
-                    {event.desc}
-                  </p>
+                  <div className={`pl-6`}>
+                    <div className="flex">
+                      <p className="text-xs text-left font-bold">
+                        {event.timeTop}{" "}
+                      </p>
+                      <p
+                        className={`text-xs text-left font-bold  ${
+                          event.isBlur && "blur-sm"
+                        }`}
+                      >
+                        / {event.title}
+                      </p>
+                    </div>
+                    <p
+                      className={`text-gray-text text-sm  font-medium ${
+                        event.isBlur && "blur-sm"
+                      }`}
+                    >
+                      {event.desc}
+                    </p>
+                  </div>
                 </div>
               </li>
             ))}
