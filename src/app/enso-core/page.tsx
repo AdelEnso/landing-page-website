@@ -125,12 +125,19 @@ const EnsoCore = () => {
           {Technologies.map((item, key) => {
             return (
               <React.Fragment key={`id_tech_${item.name}${key}`}>
-                <AnimationDiv className="p-6  ">
+                <AnimationDiv className="p-6  group">
                   <Image
                     src={item.Icon}
                     alt={item.name}
                     placeholder="blur"
-                    className=" w-full h-auto"
+                    className=" w-full h-auto group-hover:hidden"
+                    quality={100}
+                  />
+                  <Image
+                    src={item.hover}
+                    alt={item.name}
+                    placeholder="blur"
+                    className=" w-full h-auto group-hover:block hidden"
                     quality={100}
                   />
                   <p className=" text-xl text-black-text text-center  font-bold">
