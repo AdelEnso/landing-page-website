@@ -13,7 +13,7 @@ export const ROUTES = [
   },
 
   {
-    label: "Consulting Services",
+    label: "Resources",
     to: "/services",
   },
   { label: "Request A Demo", to: "/contact-us", isButton: true },

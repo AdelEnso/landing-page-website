@@ -1,7 +1,8 @@
 import RNGImg from "../../public/Gray-scale.png";
 import RNGImgColorfull from "../../public/Box-color.png";
 import AIImge from "../../public/Hand-01.png";
-import HTMIm from "../../public/Chipv1.png";
+import HTMIm from "../../public/Chip_Gray-01.png";
+import HTMImColor from "../../public/Chip-Colorfull.png";
 import Rohand from "../../public/Robo-h.png";
 
 export const Technologies = [
@@ -18,7 +19,7 @@ export const Technologies = [
     id: 2,
     name: "Hardware Transactional Memory (HTM)",
     Icon: HTMIm,
-    hover: HTMIm,
+    hover: HTMImColor,
     decription:
       "HTM allows concurrent transactions on shared memory, ensuring processes ACID properties without explicit locks.",
   },

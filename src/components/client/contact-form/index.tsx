@@ -30,7 +30,7 @@ export const Form = () => {
       errorMessage: "Please enter your name.",
     },
     phone: {
-      validate: (value: any) => /^\d+$/.test(value) && value.trim().length > 0,
+      validate: (value: any) => /^\d+$/.test(value),
       errorMessage: "Please enter a valid phone number.",
     },
     email: {

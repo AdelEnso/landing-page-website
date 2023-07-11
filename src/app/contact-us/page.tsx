@@ -1,4 +1,6 @@
 import { Form } from "@/components/client/contact-form";
+import Image from "next/image";
+import Map from "../../../public/Map-01.png";
 
 const ContactUs = () => {
   return (
@@ -6,8 +8,11 @@ const ContactUs = () => {
       <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-left font-bold">
         Contact Us!
       </h1>
-      <div className="">
+      <div className="grid grid-cols-2 gap-2">
         <Form />
+        <div className="flex items-center">
+          <Image src={Map} alt="MAP" placeholder="blur" />
+        </div>
       </div>
     </section>
   );

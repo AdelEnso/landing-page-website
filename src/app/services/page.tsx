@@ -1,42 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
 import { AnimationDiv } from "@/components/client/animation-item";
-import { SERVICES } from "@/constants/services";
 import Image from "next/image";
 import Link from "next/link";
 import ThIm from "../../../public/hacker1.png";
 import DgIm from "../../../public/Thumb-01.png";
 
-const ServiceItem = ({
-  name,
-  Icon,
-  description,
-  points,
-  reverse,
-  isRotate,
-}: any) => (
-  <div
-    className={`flex flex-col lg:flex-row items-center justify-start mb-8 ${
-      reverse ? "lg:flex-row-reverse" : ""
-    }`}
-  >
-    <div className="w-full lg:w-2/3">
-      <h3 className="text-xl font-bold mb-2">{name}</h3>
-      <p className="text-gray-600 mb-4">{description}</p>
-      {points && (
-        <ul className="list-disc mx-3 md:mx-0 md:list-inside">
-          {points.map((point: any, index: any) => (
-            <li key={index} className="text-gray-600">
-              {point}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-    <div className="flex-shrink-0 w-full lg:w-1/3 2xl:w-5/12  ">
-      <Image src={Icon} className={` ${isRotate && "rotate-12"}`} alt={name} />
-    </div>
-  </div>
-);
+// const ServiceItem = ({
+//   name,
+//   Icon,
+//   description,
+//   points,
+//   reverse,
+//   isRotate,
+// }: any) => (
+//   <div
+//     className={`flex flex-col lg:flex-row items-center justify-start mb-8 ${
+//       reverse ? "lg:flex-row-reverse" : ""
+//     }`}
+//   >
+//     <div className="w-full lg:w-2/3">
+//       <h3 className="text-xl font-bold mb-2">{name}</h3>
+//       <p className="text-gray-600 mb-4">{description}</p>
+//       {points && (
+//         <ul className="list-disc mx-3 md:mx-0 md:list-inside">
+//           {points.map((point: any, index: any) => (
+//             <li key={index} className="text-gray-600">
+//               {point}
+//             </li>
+//           ))}
+//         </ul>
+//       )}
+//     </div>
+//     <div className="flex-shrink-0 w-full lg:w-1/3 2xl:w-5/12  ">
+//       <Image src={Icon} className={` ${isRotate && "rotate-12"}`} alt={name} />
+//     </div>
+//   </div>
+// );
 
 const Services = () => {
   return (
@@ -117,70 +116,6 @@ const Services = () => {
             statement are accurate, providing a clear overview of GRC services.
           </p>
         </div>
-
-        {/* <Image
-          src={ThIm}
-          placeholder="blur"
-          alt="Hacker"
-          className="w-full md:w-2/5 h-auto"
-        /> */}
-
-        {/* <div className="  mt-12 grid grid-cols-1 lg:grid-cols-3 gap-3 place-items-center">
-          <Link href="/products/Ensō-i">
-            <AnimationDiv>
-              <p className=" text-3xl text-black-text text-center">Red Team</p>
-              <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
-              <p className="text-dec-text text-lg mt-5 text-center">
-                The Red Team simulates cyber attackers to uncover
-                vulnerabilities and weaknesses in an organization's security
-                systems.
-              </p>
-            </AnimationDiv>
-          </Link>
-          <Image
-            src={DgIm}
-            sizes="100vw"
-            placeholder="blur"
-            alt="Hacker"
-            className=" w-full h-auto"
-          />
-          <Link href="/products/Ensō RNG-aaS">
-            <AnimationDiv>
-              <p className=" text-3xl text-black-text text-center">Blue Team</p>
-              <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
-              <p className="text-dec-text text-lg mt-5 text-center">
-                The Blue Team defends an organization's information systems by
-                detecting and responding to cyber threats in real time.
-              </p>
-            </AnimationDiv>
-          </Link>
-        </div> */}
-        {/* {SERVICES.map((service, index) => (
-          <ServiceItem
-            key={index}
-            name={service.name}
-            isRotate={service.t}
-            Icon={service.Icon}
-            description={service.description}
-            points={service.points}
-            reverse={index % 2 !== 0}
-          />
-        ))} */}
-        {/* <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 mt-20 ">
-          {SERVICES.map((service, index) => (
-            <div
-              key={`keyes_${service.name}${index}`}
-              className=" border border-solid drop-shadow shadow border-white mb-4 p-4"
-            >
-              <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
-                {service.name}
-              </h3>
-              <p className=" text-base md:text-lg  text-dec-text  mb-2  px-1">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div> */}
       </div>
     </section>
   );
