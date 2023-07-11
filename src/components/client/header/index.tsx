@@ -102,7 +102,7 @@ export const Header = () => {
                         </ul>
                       )}
 
-                      {activeMenuItem === "Resources" && (
+                      {activeMenuItem === "Consulting Services" && (
                         <ul className="space-y-2 bg-transparent">
                           <li>
                             <Link href="/services">

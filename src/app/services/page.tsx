@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { AnimationDiv } from "@/components/client/animation-item";
 import { SERVICES } from "@/constants/services";
 import Image from "next/image";
