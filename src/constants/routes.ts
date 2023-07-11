@@ -8,12 +8,12 @@ export const ROUTES = [
     to: "/enso-core#products",
   },
   {
-    label: "Firm",
+    label: "About Us",
     to: "/our-team",
   },
 
   {
-    label: "Resources",
+    label: "Consulting Services ",
     to: "/services",
   },
   { label: "Request A Demo", to: "/contact-us", isButton: true },
