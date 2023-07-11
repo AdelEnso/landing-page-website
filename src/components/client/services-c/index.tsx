@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { AnimationDiv } from "../animation-item";
 import Image from "next/image";
