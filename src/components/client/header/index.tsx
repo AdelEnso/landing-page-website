@@ -107,7 +107,7 @@ export const Header = () => {
                           <li>
                             <Link href="/services">
                               <p className="text-gray-800 hover:text-indigo-600">
-                                Consulting Services
+                                Services
                               </p>
                             </Link>
                           </li>

@@ -6,7 +6,8 @@ import Case4 from "../../public/Case4.png";
 export const CASES = [
   {
     title: "Biotech Case Study",
-    titletwo: "Generating Efficient Molecular Designs of Drugs",
+    titletwo: `Generating Efficient Molecular Designs`,
+    titlethree: "of Drugs",
     image: Case1,
     points: [
       {
@@ -23,6 +24,7 @@ export const CASES = [
     title: "Banking Case Study",
     titletwo:
       "Enhancing Banking Security and Mitigating Data Breaches in the BFSI Sector",
+    titlethree: "",
     image: Case2,
     points: [
       {
@@ -39,6 +41,7 @@ export const CASES = [
   {
     title: "Telecoms Case Study",
     titletwo: "Secure Telecommunications",
+    titlethree: "",
     image: Case3,
     points: [
       {
@@ -55,6 +58,7 @@ export const CASES = [
   {
     title: "Government & Military Case Study",
     titletwo: "Secure Networking & Data Storage",
+    titlethree: "",
     image: Case4,
     points: [
       {

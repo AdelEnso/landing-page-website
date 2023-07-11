@@ -1,9 +1,9 @@
 import RNGImg from "../../public/Gray-scale.png";
 import RNGImgColorfull from "../../public/Box-color.png";
-import AIImge from "../../public/Hand-01.png";
+import AIImge from "../../public/Hand_gray.png";
 import HTMIm from "../../public/Chip_Gray-01.png";
 import HTMImColor from "../../public/Chip-Colorfull.png";
-import Rohand from "../../public/Robo-h.png";
+import Rohand from "../../public/Hand_color.png";
 
 export const Technologies = [
   {

@@ -22,7 +22,7 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
         {product?.title}
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
-      <p className="text-center text-dec-text mt-2 md:mt-8 text-lg font-medium mb-10  mx-4">
+      <p className="text-left text-dec-text mt-2 md:mt-8 text-lg font-medium mb-10  mx-4">
         {product?.deatails.desc}
       </p>
 
