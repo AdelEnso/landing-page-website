@@ -19,8 +19,8 @@ const OurTeam = () => {
       </h1>
 
       <p className="text-center text-dec-text mt-2  font-medium text-lg">
-        it's a tech startup that strives to shape the future of the digital
-        world by transforming great ideas into reality.
+        “It's a tech startup that strives to shape the future of the digital
+        world by transforming great ideas into reality.”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  my-4 bg-black-bg border-0 rounded-sm " />
       <section className="container mx-auto px-4 md:px-2 xl:px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
@@ -66,7 +66,7 @@ const OurTeam = () => {
           Meet The Team
         </h1>
         <p className="text-center text-dec-text mt-2  font-medium text-lg">
-          Leadership connects start-up with strong knowledge and experience.
+          “Leadership connects start-up with strong knowledge and experience.”
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <div className="flex flex-wrap gap-4 justify-center cursor-pointer items-center mt-20">
@@ -94,10 +94,10 @@ const OurTeam = () => {
             </Link>
           ))}
         </div>
-        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center  mt-8">
-          Engineering grounded in complex compute science and industry
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center  mt-10">
+          “Engineering grounded in complex compute science and industry”
         </h1>
-        <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
+        <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm  mb-10" />
         <div className="flex flex-wrap gap-4 justify-center cursor-pointer items-center">
           {Engineering.map((item, key) => (
             <Link

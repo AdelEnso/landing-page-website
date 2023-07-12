@@ -19,8 +19,8 @@ const EnsoCore = () => {
         Ensō Core
       </h1>
       <p className="text-center text-dec-text mt-2  font-medium text-lg">
-        where computing power and human potential converge to create
-        extraordinary solutions.
+        “ where computing power and human potential converge to create
+        extraordinary solutions.”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
       <section className="container mx-auto px-4 md:px-12 flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between mt-10">
@@ -109,7 +109,7 @@ const EnsoCore = () => {
           Our Technology
         </h1>
         <p className="text-center text-dec-text mt-2 text-lg">
-          Technology is best when great minds come together
+          “Technology is best when great minds come together”
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
@@ -143,7 +143,7 @@ const EnsoCore = () => {
                   <p className=" text-xl text-black-text text-center  font-bold">
                     {item.name}
                   </p>
-                  <p className="text-dec-text text-base my-2 text-center ">
+                  <p className="text-dec-text text-base my-2 text-center h-12">
                     {item.decription}
                   </p>
                 </AnimationDiv>
@@ -160,8 +160,9 @@ const EnsoCore = () => {
           Research & Development
         </h1>
         <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
-          We are not just about creating products, we are committed to crafting
-          solutions that transform lives and businesses for the better tomorrow.
+          “ We are not just about creating products, we are committed to
+          crafting solutions that transform lives and businesses for the better
+          tomorrow.”
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <Rnd />

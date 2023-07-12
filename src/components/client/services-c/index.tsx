@@ -97,12 +97,8 @@ export const ServicesClient = () => {
           </AnimationDiv>
         </Link>
       </div>
-      <Link
-        href="/services/Team Purple"
-        onMouseEnter={handleButtonHoverP}
-        onMouseLeave={handleButtonLeaveP}
-      >
-        <AnimationDiv className="mt-10">
+      <div onMouseEnter={handleButtonHoverP} onMouseLeave={handleButtonLeaveP}>
+        <AnimationDiv className="mt-10 flex justify-center items-center flex-col">
           <p className=" text-3xl text-black-text text-center">Team Purple</p>
           <hr className=" h-[0.3px] w-1/2 mx-auto  my-4 bg-border-color border-0 rounded-sm " />
           <p className="text-dec-text text-lg mt-5 text-center">
@@ -113,17 +109,15 @@ export const ServicesClient = () => {
             objective is to provide a learning experience for both teams and to
             improve the organization's overall security posture.
           </p>
+          <text className=" text-3xl mt-10 text-center">
+            "Critical response"
+          </text>
+          <Link href="/contact-us">
+            <button className="border-gray-text border-opacity-10 hover:border-opacity-50 border-solid border-2 rounded-sm p-2 mt-4 font-medium text-base">
+              Reach out for support
+            </button>
+          </Link>
         </AnimationDiv>
-      </Link>
-      <div className=" border border-solid drop-shadow shadow border-white mb-4 p-4 mt-20">
-        <p className=" text-base md:text-lg  text-dec-text  mb-2  px-1">
-          Governance, Risk, and Compliance (GRC) services align IT operations
-          with business goals, manage risks, and ensure regulatory compliance.
-          These services involve setting IT policies, conducting risk
-          assessments, implementing and monitoring controls, and utilizing GRC
-          software for automation and efficiency. The flow and grammar of the
-          statement are accurate, providing a clear overview of GRC services.
-        </p>
       </div>
     </div>
   );

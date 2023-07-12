@@ -85,8 +85,8 @@ export default function Home() {
             Ensō Core
           </h1>
           <p className="text-center text-dec-text text-lg font-medium mt-4">
-            is state-of-the-art computing framework designed to tackle complex
-            real-world challenges with unparalleled flexibility and efficiency.
+            “Is state-of-the-art computing framework designed to tackle complex
+            real-world challenges with unparalleled flexibility and efficiency.”
           </p>
 
           <Link href="/enso-core">

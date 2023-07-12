@@ -45,10 +45,15 @@ const Services = () => {
         Our Services
       </h1>
       <p className="text-center text-dec-text mt-2  font-medium text-lg">
-        Believing in mindfulness, simplicity, and ethics, we ensure our
-        innovative approach benefits clients’ businesses and society positively.
+        “Believing in mindfulness, simplicity, and ethics, we ensure our
+        innovative approach benefits clients’ businesses and society
+        positively.”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
+      <p className="text-center  mt-2   text-lg">
+        "Validate your cybersecurity protocols against real-world attack
+        scenarios"
+      </p>
       <ServicesClient />
     </section>
   );

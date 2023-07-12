@@ -1,5 +1,5 @@
-import RNGImg from "../../public/Gray-scale.png";
-import RNGImgColorfull from "../../public/Box-color.png";
+import RNGImg from "../../public/G-Box.png";
+import RNGImgColorfull from "../../public/C-Box.png";
 import AIImge from "../../public/Hand_gray.png";
 import HTMIm from "../../public/Chip_Gray-01.png";
 import HTMImColor from "../../public/Chip-Colorfull.png";
