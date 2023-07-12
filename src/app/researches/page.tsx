@@ -55,7 +55,7 @@ const Researches = () => {
           </text>
         </Link>
         <Link
-          href="/Cluster_Computing_2022_S_Jamil"
+          href="/Cluster_Computing_2022_S_Jamil.pdf"
           download
           target="_blank"
           className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"

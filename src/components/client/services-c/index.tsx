@@ -109,16 +109,14 @@ export const ServicesClient = () => {
             objective is to provide a learning experience for both teams and to
             improve the organization's overall security posture.
           </p>
-          <text className=" text-3xl mt-10 text-center">
-            "Critical response"
-          </text>
-          <Link href="/contact-us">
-            <button className="border-gray-text border-opacity-10 hover:border-opacity-50 border-solid border-2 rounded-sm p-2 mt-4 font-medium text-base">
-              Reach out for support
-            </button>
-          </Link>
         </AnimationDiv>
       </div>
+      <text className=" text-3xl mt-10 text-center">"Critical response"</text>
+      <Link href="/contact-us">
+        <button className="border-gray-text border-opacity-10 hover:border-opacity-50 border-solid border-2 rounded-sm p-2 mt-4 font-medium text-base">
+          Reach out for support
+        </button>
+      </Link>
     </div>
   );
 };

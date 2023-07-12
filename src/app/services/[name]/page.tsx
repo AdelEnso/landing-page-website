@@ -17,7 +17,7 @@ const ServiceDeatail: React.FC<teamservicesPageProps> = ({
         {team?.title}
       </h1>
       <p className="text-center text-dec-text mt-2  font-medium text-lg">
-        {team?.desc}
+        “{team?.desc}”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 container px-4 mt-5">
