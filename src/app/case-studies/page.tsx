@@ -1,5 +1,5 @@
+import { FileIcon } from "@/assets/svgs/file";
 import { CASES } from "@/constants/cases";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 const CaseStudies = () => {
@@ -14,10 +14,12 @@ const CaseStudies = () => {
         {CASES.map((item, index) => {
           return (
             <Link
-              className="border border-gray-text rounded border-solid flex flex-col p-4 bg-white shadow-md"
+              className=" rounded flex flex-col p-4 bg-white shadow-md"
               href={`/case-studies/${item.title}`}
               key={`${index}${item.title}`}
             >
+              <FileIcon />
+
               <h1 className="font-medium text-lg lg:text-2xl">{item.title}</h1>
             </Link>
           );

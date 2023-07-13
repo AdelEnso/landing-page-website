@@ -27,7 +27,7 @@ const ProductDeatail: React.FC<ProductPageProps> = ({ params: { name } }) => {
       </p>
 
       <div className=" mb-4 mx-4">
-        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center  mx-4">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-2xl 2xl:text-3xl  text-left  p-2">
           Key Features
         </h1>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 ">

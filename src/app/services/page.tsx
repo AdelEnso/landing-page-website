@@ -1,9 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { AnimationDiv } from "@/components/client/animation-item";
-import Image from "next/image";
-import Link from "next/link";
-import ThIm from "../../../public/hacker1.png";
-import DgIm from "../../../public/Thumb-01.png";
+
 import { ServicesClient } from "@/components/client/services-c";
 
 // const ServiceItem = ({

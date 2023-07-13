@@ -1,14 +1,14 @@
-import Case1 from "../../public/Case1.png";
-import Case2 from "../../public/Case2.png";
-import Case3 from "../../public/Case3.png";
-import Case4 from "../../public/Case4.png";
+// import Case1 from "../../public/Case1.png";
+// import Case2 from "../../public/Case2.png";
+// import Case3 from "../../public/Case3.png";
+// import Case4 from "../../public/Case4.png";
 
 export const CASES = [
   {
     title: "Biotech Case Study",
     titletwo: `Generating Efficient Molecular Designs`,
     titlethree: "of Drugs",
-    image: Case1,
+    // image: Case1,
     points: [
       {
         title: "The Challenge",
@@ -25,7 +25,7 @@ export const CASES = [
     titletwo:
       "Enhancing Banking Security and Mitigating Data Breaches in the BFSI Sector",
     titlethree: "",
-    image: Case2,
+    // image: Case2,
     points: [
       {
         title: "The Challenge",
@@ -42,7 +42,7 @@ export const CASES = [
     title: "Telecoms Case Study",
     titletwo: "Secure Telecommunications",
     titlethree: "",
-    image: Case3,
+    // image: Case3,
     points: [
       {
         title: "The Challenge",
@@ -59,7 +59,7 @@ export const CASES = [
     title: "Government & Military Case Study",
     titletwo: "Secure Networking & Data Storage",
     titlethree: "",
-    image: Case4,
+    // image: Case4,
     points: [
       {
         title: "The Challenge",

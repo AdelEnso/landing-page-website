@@ -52,7 +52,7 @@ export const ServicesClient = () => {
             <p className=" text-3xl text-black-text text-center">Team Blue</p>
             <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
             <p className="text-dec-text text-lg mt-5 text-center">
-              The Red Team simulates cyber attackers to uncover vulnerabilities
+              The Blue Team simulates cyber attackers to uncover vulnerabilities
               and weaknesses in an organization's security systems.
             </p>
             <div
@@ -82,7 +82,7 @@ export const ServicesClient = () => {
             <p className=" text-3xl text-black-text text-center">Team Red</p>
             <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
             <p className="text-dec-text text-lg mt-5 text-center">
-              The Blue Team defends an organization's information systems by
+              The Red Team defends an organization's information systems by
               detecting and responding to cyber threats in real time.
             </p>
             <div
@@ -102,8 +102,8 @@ export const ServicesClient = () => {
           <p className=" text-3xl text-black-text text-center">Team Purple</p>
           <hr className=" h-[0.3px] w-1/2 mx-auto  my-4 bg-border-color border-0 rounded-sm " />
           <p className="text-dec-text text-lg mt-5 text-center">
-            Purple Team generally blends the roles of Red and Blue Teams, with
-            the aim of enhancing the effectiveness of both teams.Conducting
+            The Purple Team generally blends the roles of Red and Blue Teams,
+            with the aim of enhancing the effectiveness of both teams.Conducting
             exercises that involve both Red and Blue Teams, with Red Team
             emulating attacks and Blue Team defending against them. The primary
             objective is to provide a learning experience for both teams and to
