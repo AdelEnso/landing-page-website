@@ -14,6 +14,10 @@ const ContactUs = () => {
           <Image src={Map} alt="MAP" placeholder="blur" />
         </div>
       </div>
+      <text className="pt-10">
+        By submitting this form, you agree to our Terms of Use and acknowledge
+        our Privacy Statement.
+      </text>
     </section>
   );
 };

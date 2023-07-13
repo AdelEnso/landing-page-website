@@ -10,10 +10,10 @@ export const AnimationDiv = ({
 }) => {
   return (
     <motion.section
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, amount: 0.8 }}
+      initial={{ opacity: 0 }}
       transition={{ ease: "easeOut", duration: 1 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 1 }}
       className={className}
     >
       {children}

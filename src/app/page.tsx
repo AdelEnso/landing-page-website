@@ -3,16 +3,13 @@ import { AnimationDiv } from "@/components/client/animation-item";
 import { SetUS } from "@/constants/setUs";
 import type { Metadata } from "next";
 import BG from "../../public/LG-Logo.png";
-import MdLogo from "../../public/md-Logo.png";
 import SmLogo from "../../public/Test-Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 export const metadata: Metadata = {
   title: "Enso.co",
   description: "Empowering Next Generation Software Solutions",
-  openGraph: {
-    images: ["/EnsoLab.png"],
-  },
+  keywords: ["Home Page", "Enso", "Next Generation Software Solutions"],
 };
 
 export default function Home() {

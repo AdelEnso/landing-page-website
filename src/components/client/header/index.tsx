@@ -4,10 +4,11 @@ import { ROUTES } from "@/constants/routes";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { CancelIcon } from "@/assets/svgs/cancel";
 import { HamburgurIcon } from "@/assets/svgs/hamburger";
-import { Menu, Transition } from "@headlessui/react";
+import { Transition } from "@headlessui/react";
+import React from "react";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -32,27 +33,26 @@ export const Header = () => {
           {!mobileMenuOpen && <HamburgurIcon />}
         </div>
         <div className="hidden lg:flex lg:gap-x-6 items-center">
-          {ROUTES.map((route) => {
+          {ROUTES.map((route, index) => {
             const samePath = pathname === route.to;
 
             return (
-              <>
+              <React.Fragment key={`keys_${index}_${route.to}`}>
                 <nav
-                  className={`${
+                  className={`group transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ${
                     route.isButton
-                      ? "group p-2  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:  bg-[#BABABA] rounded "
-                      : "group  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:underline-offset-8"
+                      ? " p-2 bg-[#BABABA] rounded "
+                      : " hover:underline-offset-8"
                   }`}
                   onMouseEnter={() => handleDropdownToggle(route.label)}
                   onMouseLeave={() => setIsDropdownOpen(false)}
-                  key={route.label}
                 >
                   <Link
                     href={route.to}
                     className={`text-base  font-sans font-medium leading-6 ${
                       route.isButton ? "text-white" : "text-black-text"
                     } ${
-                      samePath && !route.isButton
+                      samePath
                         ? " underline-offset-8 underline decoration-2"
                         : "no-underline"
                     }`}
@@ -68,16 +68,16 @@ export const Header = () => {
                         <ul className="space-y-2">
                           <li>
                             <Link href="/products/Ensō-i">
-                              <p className="text-gray-800 hover:text-indigo-600">
+                              <text className="text-gray-800 hover:text-indigo-600">
                                 Ensō-i
-                              </p>
+                              </text>
                             </Link>
                           </li>
                           <li>
                             <Link href="/products/Ensō RNG-aaS">
-                              <p className="text-gray-800 hover:text-indigo-600">
+                              <text className="text-gray-800 hover:text-indigo-600">
                                 Ensō RNG
-                              </p>
+                              </text>
                             </Link>
                           </li>
                         </ul>
@@ -87,16 +87,16 @@ export const Header = () => {
                         <ul className="space-y-2">
                           <li>
                             <Link href="/enso-core#technology">
-                              <p className="text-gray-800 hover:text-indigo-600">
+                              <text className="text-gray-800 hover:text-indigo-600">
                                 Technology
-                              </p>
+                              </text>
                             </Link>
                           </li>
                           <li>
                             <Link href="/enso-core#RND">
-                              <p className="text-gray-800 hover:text-indigo-600">
+                              <text className="text-gray-800 hover:text-indigo-600">
                                 RND
-                              </p>
+                              </text>
                             </Link>
                           </li>
                         </ul>
@@ -106,16 +106,16 @@ export const Header = () => {
                         <ul className="space-y-2 bg-transparent">
                           <li>
                             <Link href="/services">
-                              <p className="text-gray-800 hover:text-indigo-600">
+                              <text className="text-gray-800 hover:text-indigo-600">
                                 Services
-                              </p>
+                              </text>
                             </Link>
                           </li>
                           <li>
                             <Link href="/case-studies">
-                              <p className="text-gray-800 hover:text-indigo-600">
+                              <text className="text-gray-800 hover:text-indigo-600">
                                 Case Studies
-                              </p>
+                              </text>
                             </Link>
                           </li>
                         </ul>
@@ -123,12 +123,12 @@ export const Header = () => {
                     </div>
                   )}
                 </nav>
-              </>
+              </React.Fragment>
             );
           })}
         </div>
       </header>
-      <Transition
+      {/* <Transition
         show={mobileMenuOpen}
         enter="transition duration-300 ease-out"
         enterFrom="opacity-0 transform translate-y-full"
@@ -151,10 +151,10 @@ export const Header = () => {
             <CancelIcon onClick={() => setMobileMenuOpen(false)} />
           </div>
           <hr className=" w-32 h-[0.3px]  my-4 bg-nav border-0  mb-20" />
-          {ROUTES.map((route) => {
+          {ROUTES.map((route, index) => {
             const samePath = pathname === route.to;
             return (
-              <nav className="mb-5" key={route.label}>
+              <nav className="mb-5" key={`${route.to}_${index}`}>
                 <Link
                   href={route.to}
                   className={`text-xl font-bold   ${
@@ -168,7 +168,7 @@ export const Header = () => {
             );
           })}
         </div>
-      </Transition>
+      </Transition> */}
     </>
   );
 };
