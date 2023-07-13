@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Enso.co",
   description: "Empowering Next Generation Software Solutions",
   keywords: ["Home Page", "Enso", "Next Generation Software Solutions"],
+  openGraph: {
+    images: ["/src/app/opengraph-image.png"],
+  },
 };
 
 export default function Home() {
