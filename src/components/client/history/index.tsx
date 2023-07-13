@@ -12,7 +12,7 @@ export const Histroy: React.FC<props> = ({ past, present }) => {
     <>
       <div className="lg:bottom-8 relative mt-10 lg:mt-0">
         <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl   text-center   ">
-          {!enabled ? "Our History" : "Our RoadMap"}
+          {!enabled ? "Milestone" : "Our RoadMap"}
         </h1>
 
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm" />

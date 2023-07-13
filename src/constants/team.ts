@@ -24,12 +24,12 @@ export const MANAGEMENT = [
     image: "/prof.png",
     bio: "A consulting Professor at Stanford University for over 20 years, with involvement at various start-ups, corporations and investment firms, his primary responsibility in counseling faculty in matters of IP commercialization. He has co-authored over 210 technical papers, 5 books, has won numerous awards, and holds 14 international awarded/pending patents.",
   },
-  {
-    name: "Valerio Camardella",
-    title: "Chief Operating Officer",
-    image: "/Valerio.png",
-    bio: "Strategic VP and Director from Blackberry and Motorola, Valerio specializes in exponential and sustainable growth strategy for software and hardware security products. Valerio currently serves on the Board of Directors for two technology companies, Vorn and Qnective, focused on delivering secure data solutions to government and military, being a founding member of Qnective, now valued in excess of USD $1 billion",
-  },
+  // {
+  //   name: "Valerio Camardella",
+  //   title: "Chief Operating Officer",
+  //   image: "/Valerio.png",
+  //   bio: "Strategic VP and Director from Blackberry and Motorola, Valerio specializes in exponential and sustainable growth strategy for software and hardware security products. Valerio currently serves on the Board of Directors for two technology companies, Vorn and Qnective, focused on delivering secure data solutions to government and military, being a founding member of Qnective, now valued in excess of USD $1 billion",
+  // },
 ];
 
 export const Engineering = [

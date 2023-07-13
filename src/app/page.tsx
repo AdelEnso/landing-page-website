@@ -10,9 +10,6 @@ export const metadata: Metadata = {
   title: "Enso.co",
   description: "Empowering Next Generation Software Solutions",
   keywords: ["Home Page", "Enso", "Next Generation Software Solutions"],
-  openGraph: {
-    images: ["/src/app/opengraph-image.png"],
-  },
 };
 
 export default function Home() {
@@ -20,22 +17,23 @@ export default function Home() {
     <>
       <section className="flex justify-center items-center ">
         <Image
-          alt="BGs"
+          alt="Enso"
           src={BG}
           className=" 2xl:w-11/12 hidden 2xl:block"
+          priority
           placeholder="blur"
         />
-
         <Image
-          alt="BGSm"
+          alt="Enso"
           src={SmLogo}
+          priority
           className="w-11/12 2xl:hidden "
           placeholder="blur"
         />
       </section>
 
-      <AnimationDiv>
-        <section className="flex justify-center  flex-col mt-12 container mx-auto px-4 md:px-12 ">
+      <section className="flex justify-center  flex-col mt-12 container mx-auto px-4 md:px-12 ">
+        <AnimationDiv>
           <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
             What sets us apart
           </h1>
@@ -61,9 +59,9 @@ export default function Home() {
                     alt={item.label}
                   />
 
-                  <p className="text-center font-sans font-bold text-xl">
+                  <text className="text-center font-sans font-bold text-xl">
                     {item.label}
-                  </p>
+                  </text>
                   <div className="flex items-center mt-6">
                     <span className="hidden group-hover:block group-hover:transition ease-in-out delay-150 mr-2">
                       Learn More
@@ -77,17 +75,18 @@ export default function Home() {
               );
             })}
           </div>
-        </section>
-      </AnimationDiv>
+        </AnimationDiv>
+      </section>
+
       <AnimationDiv>
         <section className=" container mx-auto mt-12 items-center flex flex-col px-4 md:px-12">
           <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
             Ensō Core
           </h1>
-          <p className="text-center text-dec-text text-lg font-medium mt-4">
+          <text className="text-center text-dec-text text-lg font-medium mt-4">
             “Is state-of-the-art computing framework designed to tackle complex
             real-world challenges with unparalleled flexibility and efficiency.”
-          </p>
+          </text>
 
           <Link href="/enso-core">
             <button className="border-gray-text border-opacity-10 hover:border-opacity-50 border-solid border-2 rounded-sm w-28 h-10 mt-4 font-medium text-base">
