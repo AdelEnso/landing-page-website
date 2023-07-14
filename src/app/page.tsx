@@ -31,51 +31,50 @@ export default function Home() {
           placeholder="blur"
         />
       </section>
-      <AnimationDiv>
-        <section className="flex justify-center  flex-col mt-12 container mx-auto px-4 md:px-12 ">
-          <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
-            What sets us apart
-          </h1>
-          <p className="text-center text-dec-text text-lg font-medium mt-4">
-            “Believing in mindfulness, simplicity, and ethics, we ensure our
-            innovative approach benefits clients’ businesses and society
-            positively.”
-          </p>
-          <hr className=" w-32 h-[0.3px] mx-auto mt-4 mb-10 bg-black-bg border-0 rounded-sm " />
-          <div className="grid grid-cols-1   lg:grid-cols-4   gap-4 place-items-center ">
-            {SetUS.map((item, key) => {
-              return (
-                <Link
-                  href={item.to}
-                  className="flex flex-col items-center space-x-2 group transition duration-300 justify-center cursor-pointer"
-                  scroll={false}
-                  key={`${key}_STE-US`}
-                >
-                  <Image
-                    width={80}
-                    height={80}
-                    src={item.Icon}
-                    alt={item.label}
-                  />
 
-                  <text className="text-center font-sans font-bold text-xl">
-                    {item.label}
-                  </text>
-                  <div className="flex items-center mt-6">
-                    <span className="hidden group-hover:block group-hover:transition ease-in-out delay-150 mr-2">
-                      Learn More
-                    </span>
+      <section className="flex justify-center  flex-col mt-12 container mx-auto px-4 md:px-12 ">
+        <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
+          What sets us apart
+        </h1>
+        <p className="text-center text-dec-text text-lg font-medium mt-4">
+          “Believing in mindfulness, simplicity, and ethics, we ensure our
+          innovative approach benefits clients’ businesses and society
+          positively.”
+        </p>
+        <hr className=" w-32 h-[0.3px] mx-auto mt-4 mb-10 bg-black-bg border-0 rounded-sm " />
+        <div className="grid grid-cols-1   lg:grid-cols-4   gap-4 place-items-center ">
+          {SetUS.map((item, key) => {
+            return (
+              <Link
+                href={item.to}
+                className="flex flex-col items-center space-x-2 group transition duration-300 justify-center cursor-pointer"
+                scroll={false}
+                key={`${key}_STE-US`}
+              >
+                <Image
+                  width={80}
+                  height={80}
+                  src={item.Icon}
+                  alt={item.label}
+                />
 
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center border-gray-text border-opacity-10 border-solid border">
-                      <ArrowIcon />
-                    </div>
+                <text className="text-center font-sans font-bold text-xl">
+                  {item.label}
+                </text>
+                <div className="flex items-center mt-6">
+                  <span className="hidden group-hover:block group-hover:transition ease-in-out delay-150 mr-2">
+                    Learn More
+                  </span>
+
+                  <div className="w-8 h-8 rounded-lg flex items-center justify-center border-gray-text border-opacity-10 border-solid border">
+                    <ArrowIcon />
                   </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-      </AnimationDiv>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
 
       <AnimationDiv>
         <section className=" container mx-auto mt-12 items-center flex flex-col px-4 md:px-12">
