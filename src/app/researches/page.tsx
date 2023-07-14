@@ -9,7 +9,7 @@ const Researches = () => {
         Research & Development
       </h1>
       <p className="text-center text-dec-text mt-2  font-medium text-lg mx-4 md:mx-12">
-        “Transforming great ideas come to life”
+        “Transforming great ideas come into life”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
       <p className="text-center text-dec-text mt-2 lg:mt-20  font-medium text-lg mx-4 md:mx-12 2xl:mx-20 ">
