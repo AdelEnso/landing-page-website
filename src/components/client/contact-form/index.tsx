@@ -26,11 +26,12 @@ export const Form = () => {
   const [success, setSuccess] = useState("");
   const validationSchema: any = {
     name: {
-      validate: (value: any) => value.trim().length > 0,
-      errorMessage: "Please enter your name.",
+      validate: (value: any) =>
+        value.trim().length > 0 && /^[a-zA-Z]+$/.test(value),
+      errorMessage: "Please enter your name without any special character.",
     },
     phone: {
-      validate: (value: any) => /^\d+$/.test(value),
+      validate: (value: any) => /^\d{11,14}$/.test(value),
       errorMessage: "Please enter a valid phone number.",
     },
     email: {
@@ -148,7 +149,7 @@ export const Form = () => {
         <label htmlFor="phone" className="flex items-center">
           <PhoneIcon />
           <input
-            type="text"
+            type="number"
             id="phone"
             ref={phoneRef}
             placeholder="Phone"
