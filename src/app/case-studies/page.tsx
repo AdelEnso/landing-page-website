@@ -1,14 +1,22 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FileIcon } from "@/assets/svgs/file";
 import { CASES } from "@/constants/cases";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Img from "../../../public/Folder.png";
 const CaseStudies = () => {
   return (
     <section className="container mx-auto px-4 md:px-12 flex  flex-col justify-center items-center">
       <h1 className=" text-gray-text text-xl  sm:text-3xl xl:text-4xl 2xl:text-5xl  text-center">
         Our Case Studies
       </h1>
-
+      <p className="text-center text-dec-text mt-2  font-medium text-lg">
+        “Our diverse portfolio of case studies, you can gain insights into how
+        Enso Lab's innovative solutions have effectively addressed various
+        complex challenges in technology and data security across different
+        industries.”
+      </p>
       <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-content-center mt-20">
         {CASES.map((item, index) => {
@@ -18,9 +26,14 @@ const CaseStudies = () => {
               href={`/case-studies/${item.title}`}
               key={`${index}${item.title}`}
             >
-              <FileIcon />
-
-              <h1 className="font-medium text-lg lg:text-2xl">{item.title}</h1>
+              <h1 className="font-medium text-lg lg:text-2xl mb-8 text-left">
+                {item.title}
+              </h1>
+              <Image
+                className="w-2/4 flex self-center"
+                src={Img}
+                alt={item.title}
+              />
             </Link>
           );
         })}

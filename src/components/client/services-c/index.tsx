@@ -52,8 +52,8 @@ export const ServicesClient = () => {
             <p className=" text-3xl text-black-text text-center">Team Blue</p>
             <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
             <p className="text-dec-text text-lg mt-5 text-center">
-              The Blue Team simulates cyber attackers to uncover vulnerabilities
-              and weaknesses in an organization's security systems.
+              The Blue Team defends an organization's information systems by
+              detecting and responding to cyber threats in real time.
             </p>
             <div
               className="flex items-center justify-center"
@@ -82,8 +82,8 @@ export const ServicesClient = () => {
             <p className=" text-3xl text-black-text text-center">Team Red</p>
             <hr className=" h-[0.3px]  my-4 bg-border-color border-0 rounded-sm " />
             <p className="text-dec-text text-lg mt-5 text-center">
-              The Red Team defends an organization's information systems by
-              detecting and responding to cyber threats in real time.
+              The Red Team simulates cyber attackers to uncover vulnerabilities
+              and weaknesses in an organization's security systems.
             </p>
             <div
               className="flex items-center justify-center"

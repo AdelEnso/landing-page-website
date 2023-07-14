@@ -1,3 +1,4 @@
+import { Cresarch } from "@/components/client/c-research";
 import Link from "next/link";
 
 /* eslint-disable react/no-unescaped-entities */
@@ -25,28 +26,7 @@ const Researches = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-4 mx-4 md:mx-12 mt-20">
         <Link
-          download
-          target="_blank"
-          href="/Androkit_SirHammad.pdf"
-          className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"
-        >
-          <text className="text-center text-dec-text text-sm md:text-lg">
-            Android Digital Forensics
-          </text>
-        </Link>
-        <Link
-          download
-          target="_blank"
-          href="/IoT_Operating_Systems_and_Security_Chall.pdf"
-          className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"
-        >
-          <text className="text-center text-dec-text text-sm md:text-lg">
-            IoT Operating System Security
-          </text>
-        </Link>
-        <Link
           href="/IEEE_ACCESS_2022_A_Slam.pdf"
-          download
           target="_blank"
           className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"
         >
@@ -55,8 +35,7 @@ const Researches = () => {
           </text>
         </Link>
         <Link
-          href="/Cluster_Computing_2022_S_Jamil.pdf"
-          download
+          href="/Cluster_Computing_2022_A_Salam.pdf"
           target="_blank"
           className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"
         >
@@ -64,27 +43,26 @@ const Researches = () => {
             Operating System Index Data Structures
           </text>
         </Link>
-        <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-          <p className="text-center text-dec-text text-sm md:text-lg">
-            True Random Number Generation (TRNG)
-          </p>
-        </div>
+        <Link
+          target="_blank"
+          href="/IJCSIS_2016_M_Asim.pdf"
+          className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"
+        >
+          <text className="text-center text-dec-text text-sm md:text-lg">
+            IoT Operating System Security
+          </text>
+        </Link>
 
-        <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-          <p className="text-center text-dec-text text-sm md:text-lg">
-            Hardwear Transactional Memory Architecture
-          </p>
-        </div>
-        <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-          <p className="text-center text-dec-text text-sm md:text-lg">
-            Trusted Execution Environment (TEE)
-          </p>
-        </div>
-        <div className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20">
-          <p className="text-center text-dec-text text-sm md:text-lg">
-            FPGA-based hardware design on post-quantum cryptography.
-          </p>
-        </div>
+        <Link
+          target="_blank"
+          href="/FGCS_2019_M_Asim.pdf"
+          className=" border border-solid drop-shadow shadow border-dec-text p-2 rounded-sm items-center justify-center flex h-20"
+        >
+          <text className="text-center text-dec-text text-sm md:text-lg">
+            Android Digital Forensics
+          </text>
+        </Link>
+        <Cresarch />
       </div>
     </>
   );

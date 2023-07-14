@@ -128,7 +128,7 @@ export const Header = () => {
           })}
         </div>
       </header>
-      {/* <Transition
+      <Transition
         show={mobileMenuOpen}
         enter="transition duration-300 ease-out"
         enterFrom="opacity-0 transform translate-y-full"
@@ -168,7 +168,7 @@ export const Header = () => {
             );
           })}
         </div>
-      </Transition> */}
+      </Transition>
     </>
   );
 };

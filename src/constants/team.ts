@@ -9,7 +9,7 @@ export const MANAGEMENT = [
     name: "Masood Mohammad",
     title: "Founder",
     image: "/masood_.png",
-    bio: "Accomplished entrepreneur with over a decade of experience in business ownership, management, and development,Exceptional at forging strategic partnerships, leveraging knowledge networks, and cultivating connections to drive success,Renowned for launching and scaling businesses across various sectors, demonstrating a unique ability to adapt and innovate,Proficient in identifying new opportunities, designing creative solutions, and fostering sustainable growth",
+    bio: "Masood is a dynamic tech entrepreneur with a diverse professional background. From a young age, he exhibited exceptional aptitude for Computer Hardware and Network Engineering. Before venturing into entrepreneurship, Masood assumed pivotal roles in private offices in the UAE and Saudi Arabia, where he refined his skills in brokering substantial commodity deals. Subsequently, he served on the board of a Chinese-based cryptocurrency company, where he deepened his understanding of blockchain technologies. Now, as the founder of Enso Lab, a research-based tech company, Masood offers a unique global perspective and innovative problem-solving approach that fuels his success in the industry.",
   },
   {
     name: "Oliver Michael Meyer",

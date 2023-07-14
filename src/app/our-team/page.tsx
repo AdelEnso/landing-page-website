@@ -40,6 +40,7 @@ const OurTeam = () => {
 
         <Image
           src={Firm}
+          priority
           className="w-2/4  h-auto  object-contain lg:left-24   lg:bottom-6 relative order-1 lg:order-2"
           placeholder="blur"
           alt="FIRM"

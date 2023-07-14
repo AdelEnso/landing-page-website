@@ -1,6 +1,6 @@
 "use client";
-import Blub from "../../../../public/Bulb.png";
-import BlubC from "../../../../public/Bulb-light.png";
+import Blub from "../../../../public/Bulb-sketch-low.png";
+import BlubC from "../../../../public/Bulb-light-low.png";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
@@ -29,6 +29,7 @@ export const Rnd = () => {
       <Image
         src={BlubC}
         alt="BlubColor"
+        priority
         className={`w-full md:w-full lg:w-2/5 2xl:w-2/4 ${
           isButtonHovered ? "block" : "hidden"
         } transition-opacity duration-300 ${
