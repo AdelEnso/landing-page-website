@@ -12,12 +12,15 @@ const Researches = () => {
         “Transforming great ideas into life”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
-      <p className="text-center text-dec-text mt-2 lg:mt-20  font-medium text-lg mx-4 md:mx-12 2xl:mx-20 ">
+      <p className="text-center text-dec-text mt-2 lg:mt-20  font-medium text-lg mx-4 md:mx-16 2xl:mx-20 ">
         Our ongoing Research & Development is the driving force behind our
         inventive solutions, guiding us to create advanced products for cyber
         attack prevention, quantum-proof cryptographic solutions, and secure
-        communication technologies. We're committed to transforming lives and
-        businesses for a better tomorrow.
+        communication technologies.
+      </p>
+      <p className="text-center text-dec-text  font-medium text-lg mx-4 md:mx-12 2xl:mx-20 ">
+        We're committed to transforming lives and businesses for a better
+        tomorrow!
       </p>
       {/* <div className="flex flex-row justify-around items-center mt-20 mb-2">
         <text>Software Based Research</text>

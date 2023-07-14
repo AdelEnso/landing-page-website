@@ -95,7 +95,7 @@ export const Header = () => {
                           <li>
                             <Link href="/enso-core#RND">
                               <text className="text-gray-800 hover:text-indigo-600">
-                                RND
+                                R&D
                               </text>
                             </Link>
                           </li>
