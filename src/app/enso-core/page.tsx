@@ -162,7 +162,7 @@ const EnsoCore = () => {
         <p className="text-center text-dec-text mt-2 md:mt-8 text-lg">
           “ We are not just about creating products, we are committed to
           crafting solutions that transform lives and businesses for the better
-          tomorrow.”
+          tomorrow”
         </p>
         <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
         <Rnd />

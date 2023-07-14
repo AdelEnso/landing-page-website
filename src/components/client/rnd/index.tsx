@@ -20,7 +20,7 @@ export const Rnd = () => {
       <Image
         src={Blub}
         alt="Blub"
-        className={`w-full md:w-full lg:w-2/5 2xl:w-2/4 ${
+        className={`w-full md:w-full lg:w-2/6 2xl:w-2/4 ${
           isButtonHovered ? "hidden" : "block"
         } transition-opacity duration-300 ${
           isButtonHovered ? "opacity-0" : "opacity-100"
@@ -30,7 +30,7 @@ export const Rnd = () => {
         src={BlubC}
         alt="BlubColor"
         priority
-        className={`w-full md:w-full lg:w-2/5 2xl:w-2/4 ${
+        className={`w-full md:w-full lg:w-2/6 2xl:w-2/4 ${
           isButtonHovered ? "block" : "hidden"
         } transition-opacity duration-300 ${
           isButtonHovered ? "opacity-100" : "opacity-0"
