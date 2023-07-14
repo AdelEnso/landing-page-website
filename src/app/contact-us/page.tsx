@@ -8,7 +8,7 @@ const ContactUs = () => {
       <h1 className=" text-gray-text text-3xl xl:text-4xl 2xl:text-5xl  text-left font-bold">
         Contact Us!
       </h1>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 ">
         <Form />
         <div className="flex items-center">
           <Image src={Map} alt="MAP" placeholder="blur" />

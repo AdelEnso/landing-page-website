@@ -49,16 +49,16 @@ const OurTeam = () => {
       <section className="container mx-auto px-4 md:px-12 mb-20">
         <Histroy
           past={
-            <AnimationDiv>
+            <>
               <TimeLine events={pastEvents} />
               <TimeLineSmall events={pastEvents} />
-            </AnimationDiv>
+            </>
           }
           present={
-            <AnimationDiv>
+            <>
               <TimeLine events={futureEvents} />
               <TimeLineSmall events={futureEvents} />
-            </AnimationDiv>
+            </>
           }
         />
       </section>
