@@ -47,10 +47,7 @@ const Services = () => {
         positively.”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto my-4 bg-black-bg border-0 rounded-sm " />
-      <p className="text-center  mt-2   text-lg">
-        "Validate your cybersecurity protocols against real-world attack
-        scenarios"
-      </p>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-content-center mt-20">
         {TESTCC.map((item, index) => {
           return (
