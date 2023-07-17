@@ -26,14 +26,14 @@ const ServiceDeatail: React.FC<teamservicesPageProps> = ({
             key={`keyes_${item}${index}`}
             className=" border border-solid drop-shadow shadow border-white  p-4 h-full lg:h-80"
           >
-            <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
+            <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1 text-center">
               {item.title}
             </h3>
-            <p className=" text-base md:text-lg  text-dec-text  mb-2  px-1">
+            <p className=" text-base md:text-lg  text-dec-text  mb-2  px-1 text-center">
               {item.desc}
             </p>
             {item?.adv && (
-              <h3 className=" text-base md:text-lg  text-dec-text font-medium mb-2  px-1">
+              <h3 className=" text-base md:text-lg  text-dec-text font-medium mb-2  px-1 text-center">
                 Advantages:{" "}
                 <text className=" text-base md:text-lg  text-dec-text ">
                   {item.adv}
