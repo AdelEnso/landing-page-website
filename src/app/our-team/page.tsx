@@ -26,10 +26,10 @@ const OurTeam = () => {
       <section className="container mx-auto px-4 md:px-2 xl:px-12 flex flex-col lg:flex-row items-center lg:items-start 2xl:items-center justify-center lg:justify-between overflow-hidden mt-8">
         <div className="flex flex-col order-2 lg:order-1">
           <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-6 lg:mt-6   ">
-            EnsoLab - a place where ideas come to life. Our journey begins at
-            the crossroads of innovation and research & development (R&D), where
-            we transform cutting-edge concepts into tangible and intangible
-            products that significantly impact the digital world.
+            EnsoLab is where ideas come to life. We begin our journey at the
+            intersection of innovation and research & development (R&D),
+            transforming cutting-edge concepts into tangible and intangible
+            products that have a significant impact on the digital world.
           </p>
           <p className="text-dec-text text-base   font-medium md:text-lg text-center lg:text-left mt-6 lg:mt-1   order-2 lg:order-1 ">
             We are committed to demonstrating that innovation, when steered by

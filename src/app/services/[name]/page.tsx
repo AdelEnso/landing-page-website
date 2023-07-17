@@ -20,11 +20,11 @@ const ServiceDeatail: React.FC<teamservicesPageProps> = ({
         “{team?.desc}”
       </p>
       <hr className=" w-32 h-[0.3px] mx-auto  mt-4 bg-black-bg border-0 rounded-sm " />
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 container mx-auto px-4 mt-5 place-items-center">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 container mx-auto px-4   mt-5 place-items-center">
         {team?.activtes.map((item, index) => (
           <div
             key={`keyes_${item}${index}`}
-            className=" border border-solid drop-shadow shadow border-white  p-4"
+            className=" border border-solid drop-shadow shadow border-white  p-4 h-full lg:h-80"
           >
             <h3 className=" text-base md:text-lg  text-dec-text font-semibold mb-2  px-1">
               {item.title}

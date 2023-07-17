@@ -102,7 +102,7 @@ export const Header = () => {
                         </ul>
                       )}
 
-                      {activeMenuItem === "Resources" && (
+                      {/* {activeMenuItem === "Resources" && (
                         <ul className="space-y-2 bg-transparent">
                           <li>
                             <Link href="/services">
@@ -119,7 +119,7 @@ export const Header = () => {
                             </Link>
                           </li>
                         </ul>
-                      )}
+                      )} */}
                     </div>
                   )}
                 </nav>

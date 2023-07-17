@@ -8,8 +8,8 @@ export const Footer = () => {
         {/* Footer Part 1 */}
         <div className="lg:text-left md:text-center">
           <p className=" text-nav font-normal">
-            Ensō Lab is a research-driven tech startup developing solutions for
-            info-security, cyber protection, and secure communication.
+            Empowering the Digital World with Innovative Solutions. EnsoLab -
+            Transforming Ideas into Impact.
           </p>
         </div>
 

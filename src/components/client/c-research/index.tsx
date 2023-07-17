@@ -28,7 +28,7 @@ export const Cresarch = () => {
         onClick={openModal}
       >
         <p className="text-center text-dec-text text-sm md:text-lg">
-          Hardwear Transactional Memory Architecture
+          Hardware Transactional Memory Architecture
         </p>
       </div>
       <div

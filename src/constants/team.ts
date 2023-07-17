@@ -18,12 +18,12 @@ export const MANAGEMENT = [
     bio: "The CEO of Löwenfels Partner AG. Over 20 years of experience as executive expertise including senior vice president for simulation training, chief information officer at RUAG and head of information technology at Ascom group. Highly affiliated with both technical and technological sides of the management and business.",
   },
 
-  {
-    name: "Prof. Prathap Subrahmanyam",
-    title: "Advisory Board Member",
-    image: "/prof.png",
-    bio: "A consulting Professor at Stanford University for over 20 years, with involvement at various start-ups, corporations and investment firms, his primary responsibility in counseling faculty in matters of IP commercialization. He has co-authored over 210 technical papers, 5 books, has won numerous awards, and holds 14 international awarded/pending patents.",
-  },
+  // {
+  //   name: "Prof. Prathap Subrahmanyam",
+  //   title: "Advisory Board Member",
+  //   image: "/prof.png",
+  //   bio: "A consulting Professor at Stanford University for over 20 years, with involvement at various start-ups, corporations and investment firms, his primary responsibility in counseling faculty in matters of IP commercialization. He has co-authored over 210 technical papers, 5 books, has won numerous awards, and holds 14 international awarded/pending patents.",
+  // },
   // {
   //   name: "Valerio Camardella",
   //   title: "Chief Operating Officer",
@@ -35,43 +35,43 @@ export const MANAGEMENT = [
 export const Engineering = [
   {
     name: "Abdul Salam",
-    title: "Project Manager/Team Lead",
+    title: "Head, Services",
     image: "/abdul.png",
     bio: "Skilled computer researcher with expertise in OS architecture and technical Management. Collaborated in projects funded by BK21, SK Hynix, and NRF of South Korea. Effective team lead, oversee projects, and deliver successful outcomes through efficient planning, coordination, and execution.",
   },
   {
     name: "Muhammad Asim",
-    title: "Security Consultant/Tech. Team Lead",
+    title: "Head, Products and R&D",
     image: "/asim.png",
     bio: "Cyber Security Consultant having expertise in Governance, Risk & Compliance (GRC), IT and OT Audit, Vulnerability Assessment and Penetration Testing (VAPT), IAM, Digital Forensics, Cloud Security, and IoT Security.",
   },
   {
     name: "Sikandar Abbas",
-    title: "Sr. Penetration Tester",
+    title: "Software Design Engineer",
     image: "/sikandar.png",
     bio: "Highly skilled OSCP, CEH and CHFI certified professional with expertise in Penetration testing possesses extensive experience with ethical hacking, vulnerability assessment, and digital forensics.",
   },
   {
     name: "Muhammad Waleed",
-    title: "System Software Engineer",
+    title: "Software Design Engineer",
     image: "/waleed2.png",
     bio: "Experienced programmer with expertise in low level C and C++ programming, adept at designing and implementing efficient solutions for complex systems.",
   },
   {
     name: "Umer Mansoor",
-    title: "Full Stack Developer",
+    title: "Software Design Engineer",
     image: "/umer.png",
     bio: "Experienced full stack software engineer having experience in backend development technologies including NodeJs, NestJs, REST full API, SOAP API and system level APIs.",
   },
   {
     name: "Adel Al Lham",
-    title: "SR.Front End Developer",
+    title: "Software Design Engineer",
     image: "/Dol.jpeg",
     bio: "Bachelor's degree in Artificial Intelligence and possess expertise in front-end development for web and mobile platforms using JavaScript, TypeScript, React.js, Redux.js, and React Native.",
   },
   {
     name: "Usman Zain ul Abedin",
-    title: "Embedded Engineer",
+    title: "Hardware Design Engineer",
     image: "/usman.png",
     bio: "Experienced in designing and developing computer architecture, firmware, and embedded software development for RISC-V based system-on-chip with hands-on experience on FPGAs.",
   },
