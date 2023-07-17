@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { ServicesClient } from "@/components/client/services-c";
+import { TESTCC } from "@/constants/services";
 
 // const ServiceItem = ({
 //   name,
@@ -50,7 +51,19 @@ const Services = () => {
         "Validate your cybersecurity protocols against real-world attack
         scenarios"
       </p>
-      <ServicesClient />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-content-center mt-20">
+        {TESTCC.map((item, index) => {
+          return (
+            <h1
+              className="font-medium text-lg lg:text-2xl mb-8  border border-solid drop-shadow shadow border-white  p-4 text-center"
+              key={`${index}_${item.name}`}
+            >
+              {item.name}
+            </h1>
+          );
+        })}
+      </div>
+      {/* <ServicesClient /> */}
     </section>
   );
 };

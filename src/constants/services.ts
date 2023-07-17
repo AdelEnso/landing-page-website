@@ -150,3 +150,36 @@ export const TEAMS = [
     ],
   },
 ];
+
+export const TESTCC = [
+  {
+    name: "IT Security",
+  },
+  {
+    name: "Cloud Security and Data Management",
+  },
+  {
+    name: "Hardware Security",
+  },
+  {
+    name: "IoT Security",
+  },
+  {
+    name: "API Security",
+  },
+  {
+    name: "Ethical Hacking",
+  },
+  {
+    name: "Secure System Integration",
+  },
+  {
+    name: "Cryptography",
+  },
+  {
+    name: "Mathematical Modeling and Analysis",
+  },
+  {
+    name: "Digital Forensics",
+  },
+];
