@@ -36,37 +36,37 @@ export const Engineering = [
   {
     name: "Abdul Salam",
     title: "Head, Services",
-    image: "/abdul.png",
+    image: "/Eng-Abdul.jpg",
     bio: "Skilled computer researcher with expertise in OS architecture and technical Management. Collaborated in projects funded by BK21, SK Hynix, and NRF of South Korea. Effective team lead, oversee projects, and deliver successful outcomes through efficient planning, coordination, and execution.",
   },
   {
     name: "Muhammad Asim",
     title: "Head, Products and R&D",
-    image: "/asim.png",
+    image: "/Eng-Asim.jpg",
     bio: "Cyber Security Consultant having expertise in Governance, Risk & Compliance (GRC), IT and OT Audit, Vulnerability Assessment and Penetration Testing (VAPT), IAM, Digital Forensics, Cloud Security, and IoT Security.",
   },
   {
     name: "Sikandar Abbas",
     title: "Software Design Engineer",
-    image: "/sikandar.png",
+    image: "/Eng-sekandar.jpg",
     bio: "Highly skilled OSCP, CEH and CHFI certified professional with expertise in Penetration testing possesses extensive experience with ethical hacking, vulnerability assessment, and digital forensics.",
   },
   {
     name: "Muhammad Waleed",
     title: "Software Design Engineer",
-    image: "/waleed2.png",
+    image: "/Eng-walled.jpg",
     bio: "Experienced programmer with expertise in low level C and C++ programming, adept at designing and implementing efficient solutions for complex systems.",
   },
   {
     name: "Umer Mansoor",
     title: "Software Design Engineer",
-    image: "/umer.png",
+    image: "/Eng-umer.jpg",
     bio: "Experienced full stack software engineer having experience in backend development technologies including NodeJs, NestJs, REST full API, SOAP API and system level APIs.",
   },
   {
     name: "Adel Al Lham",
     title: "Software Design Engineer",
-    image: "/Dol.jpeg",
+    image: "/Eng-Adel.jpg",
     bio: "Bachelor's degree in Artificial Intelligence and possess expertise in front-end development for web and mobile platforms using JavaScript, TypeScript, React.js, Redux.js, and React Native.",
   },
   {
